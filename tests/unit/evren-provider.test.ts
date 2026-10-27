@@ -25,10 +25,22 @@ test("evren is an OpenAI-compatible Bearer registry entry", () => {
   assert.equal(evrenProvider.passthroughModels, true);
 });
 
-test("evren leaves model discovery to the live upstream catalog", () => {
-  // The catalog is served live from /v1/models, so nothing is hardcoded: an empty list
-  // plus passthroughModels keeps the picker in sync with the upstream.
-  assert.deepEqual(evrenProvider.models, []);
+test("evren declares live-verified vision verdicts and passes the rest through", () => {
+  const vision = Object.fromEntries(evrenProvider.models.map((m) => [m.id, m.supportsVision]));
+  assert.deepEqual(vision, {
+    "qwen3-vl-30b": true,
+    "gemma-4-31b": true,
+    "qwen3.8-flash-next": true,
+    "deepseek-v4.1-flash": true,
+    "glm-5.3": false,
+  });
+});
+
+test("evren vision verdicts reach the resolved capability layer", async () => {
+  const { getResolvedModelCapabilities } = await import("../../src/lib/modelCapabilities.ts");
+  assert.equal(getResolvedModelCapabilities("evren/gemma-4-31b")?.supportsVision, true);
+  assert.equal(getResolvedModelCapabilities("evren/qwen3-vl-30b")?.supportsVision, true);
+  assert.equal(getResolvedModelCapabilities("evren/glm-5.3")?.supportsVision, false);
 });
 
 test("evren is wired through registry, metadata, endpoint and default executor", async () => {
@@ -51,9 +63,9 @@ test("evren is not listed as an aggregator", () => {
   assert.equal(AGGREGATOR_PROVIDER_IDS.has("evren"), false);
 });
 
-test("evren claims no capability that was not exercised", () => {
-  // Capabilities are advertised only once exercised through this executor, so
-  // the entry carries no tool/vision capability declaration yet.
+test("evren claims no provider-wide capability", () => {
+  // Vision differs per model (glm-5.3 is text-only), so it is declared on the
+  // registry models above, never as a blanket provider-level flag.
   const metadata = APIKEY_PROVIDERS.evren as Record<string, unknown>;
   for (const key of ["supportsTools", "supportsVision", "capabilities"]) {
     assert.equal(metadata[key], undefined, `${key} must not be declared unverified`);
