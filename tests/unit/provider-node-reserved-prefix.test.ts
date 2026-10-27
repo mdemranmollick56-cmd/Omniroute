@@ -218,8 +218,11 @@ test("shared set size includes live REGISTRY and retired Designer + Felo + Qwen 
   // Measured on the merged tree: RESERVED_PROVIDER_PREFIXES.size = 431.
   // The current catalog removes the Free provider id and oc alias (432 -> 430).
   // ainetcafe (#13862) registers id "ainetcafe" with the same alias — one more (432 -> 433).
-  assert.equal(RESERVED_PREFIX_COUNT, 433);
+  // AtmoRouter registers id "atmorouter" with an identical alias — one more (433 -> 434).
+  // Measured, not hand-derived: RESERVED_PROVIDER_PREFIXES.size on release/v3.8.53 + this change.
+  assert.equal(RESERVED_PREFIX_COUNT, 434);
   assert.equal(RESERVED_PROVIDER_PREFIXES.has("ainetcafe"), true);
+  assert.equal(RESERVED_PROVIDER_PREFIXES.has("atmorouter"), true);
 });
 
 test("notrack-web registry id and alias stay reserved", () => {
