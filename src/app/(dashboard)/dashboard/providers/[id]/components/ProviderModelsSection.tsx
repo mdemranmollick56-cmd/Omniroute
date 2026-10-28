@@ -23,6 +23,7 @@ import {
   type ProviderMessageTranslator,
 } from "../providerPageHelpers";
 import ModelRow, { ModelVisibilityToolbar } from "./ModelRow";
+import ModelIntelligencePanel from "./ModelIntelligencePanel";
 import PassthroughModelsSection from "./PassthroughModelsSection";
 import CompatibleModelsSection from "./CompatibleModelsSection";
 import type { ModelCompatSavePatch } from "../hooks/useModelVisibilityHandlers";
@@ -192,6 +193,7 @@ export default function ProviderModelsSection({
 }: ProviderModelsSectionProps) {
   const [freeFilter, setFreeFilter] = useState<"all" | "free" | "paid">("all");
   const [sortFreeFirst, setSortFreeFirst] = useState(false);
+  const [showIntelligence, setShowIntelligence] = useState(false);
   const canConfigureAutoFetchModels = connections.some(
     (connection) => connection.isActive !== false && typeof connection.id === "string"
   );
@@ -516,9 +518,19 @@ export default function ProviderModelsSection({
           onFreeFilterChange={setFreeFilter}
           sortFreeFirst={sortFreeFirst}
           onSortFreeFirstChange={setSortFreeFirst}
+          onCompare={() => setShowIntelligence(true)}
+          compareDisabled={models.length === 0}
         />
       )}
-      <AutoGrid>
+      <AutoGrid className="relative">
+        {showIntelligence && (
+          <ModelIntelligencePanel
+            t={t}
+            providerId={providerId}
+            providerName={providerInfo?.name || providerId}
+            onClose={() => setShowIntelligence(false)}
+          />
+        )}
         {displayModels.map((model) => {
           return (
             <ModelRow
