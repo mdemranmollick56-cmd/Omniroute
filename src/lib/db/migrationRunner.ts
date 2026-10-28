@@ -630,6 +630,16 @@ function isSchemaAlreadyApplied(
         hasColumn(db, "usage_history", "provider_credits") &&
         hasColumn(db, "usage_history", "provider_cost_usd")
       );
+    case "217":
+      // Cache-write tier columns (#17307, renumbered 213 -> 217: the 213 slot went to
+      // 213_api_key_preferred_connections first, which has no guard here).
+      return [
+        "tokens_cache_creation_5m",
+        "tokens_cache_creation_1h",
+        "cache_creation_tier_status",
+        "cache_write_cost_usd",
+        "cache_write_priced_tokens",
+      ].every((column) => hasColumn(db, "call_logs", column));
     default:
       return false;
   }
