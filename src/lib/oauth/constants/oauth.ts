@@ -131,6 +131,9 @@ export const CODEBUDDY_INTL_CONFIG = {
   platform: "ide",
   domain: "www.codebuddy.ai",
   pollInterval: 5000,
+  // Captured CLI login sends a literal `{}` state body (intl only; CN keeps the
+  // platform body because its login was never captured with `{}`).
+  emptyStateBody: true,
 };
 
 // WorkBuddy config lives with its device-flow module so this god-file only
