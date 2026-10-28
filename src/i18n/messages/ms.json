@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Kuota telah habis; penggunaan tambahan dibenarkan, jadi perkhidmatan diteruskan.",
     "healthPaidCreditsBypass": "Kuota telah habis; kredit berbayar yang tersedia membolehkan perkhidmatan diteruskan.",
     "healthFilteringBypass": "Kuota telah habis; penapisan kuota setempat dilumpuhkan, jadi perkhidmatan diteruskan.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Penggunaan",
     "grokExtraUsageCredits": "Kredit Penggunaan Tambahan",
     "grokAutoTopUp": "Pengisian Automatik",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Penebusan akan menetapkan semula had penggunaan Claude yang layak dengan serta-merta dan menggunakan kredit ini secara kekal.",
     "claudeResetCreditsModalTitle": "Kredit tetapan semula Claude",
     "claudeResetCreditsModalExplainer": "Kredit tetapan semula Claude yang tersedia dan tetapan semula sesi mingguan untuk akaun ini.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "Berdasarkan pemerhatian terkini, bukan ujian langsung. Pilih akaun untuk butiran.",
     "healthRecovery": "Anggaran pemulihan",
     "healthAvailable": "Tersedia",
@@ -11456,7 +11456,10 @@
     "continue": "Teruskan",
     "tabPasteSetupToken": "Token persediaan",
     "claudeSetupTokenDescription": "Jalankan `claude setup-token` dalam terminal dan tampal token yang dicetaknya. Token sah selama satu tahun dan tiada token muat semula. OmniRoute menghantar satu permintaan ujian kepada Anthropic sebelum menyimpannya.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Sambungkan IDE Kursor",

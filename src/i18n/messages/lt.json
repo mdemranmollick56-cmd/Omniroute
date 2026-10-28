@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Kvota išnaudota; papildomas naudojimas leidžiamas, todėl paslauga tęsiama.",
     "healthPaidCreditsBypass": "Kvota išnaudota; turimi mokami kreditai leidžia tęsti paslaugą.",
     "healthFilteringBypass": "Kvota išnaudota; vietinis kvotų filtravimas išjungtas, todėl paslauga tęsiama.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Naudojimas",
     "grokExtraUsageCredits": "Papildomo naudojimo kreditai",
     "grokAutoTopUp": "Automatinis papildymas",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Panaudojus iš karto atstatomi atitinkami Claude naudojimo limitai ir visam laikui sunaudojamas šis kreditas.",
     "claudeResetCreditsModalTitle": "Claude atstatymo kreditai",
     "claudeResetCreditsModalExplainer": "Šiai paskyrai pasiekiami Claude atstatymo kreditai ir savaitiniai seansų atstatymai.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "Pagal naujausius stebėjimus, ne tiesioginį patikrinimą. Pasirinkite paskyrą išsamiai informacijai.",
     "healthRecovery": "Numatomas atkūrimas",
     "healthAvailable": "Prieinama",
@@ -11456,7 +11456,10 @@
     "continue": "Tęsti",
     "tabPasteSetupToken": "Sąrankos žetonas",
     "claudeSetupTokenDescription": "Terminale paleiskite `claude setup-token` ir įklijuokite jo išspausdintą žetoną. Jis galioja vienerius metus ir neturi atnaujinimo žetono. Prieš išsaugodamas OmniRoute išsiunčia vieną bandomąją užklausą į Anthropic.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Prijungti Cursor",

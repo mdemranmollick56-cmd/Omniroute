@@ -9939,6 +9939,10 @@
     "healthExtraUsageBypass": "Il-kwota ntużat kollha; l-użu żejjed huwa permess, għalhekk is-servizz ikompli.",
     "healthPaidCreditsBypass": "Il-kwota ntużat kollha; il-krediti mħallsa disponibbli jippermettu li s-servizz ikompli.",
     "healthFilteringBypass": "Il-kwota ntużat kollha; il-filtrazzjoni lokali tal-kwoti hija diżattivata, għalhekk is-servizz ikompli.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Użu",
     "grokExtraUsageCredits": "Krediti Addizzjonali għall-Użu",
     "grokAutoTopUp": "Rikarga Awtomatika",
@@ -10395,10 +10399,6 @@
     "confirmRedeemClaudeResetCredit": "It-tifdija tirrisettja immedjatament il-limiti eliġibbli tal-użu ta' Claude u tikkonsma dan il-kreditu b'mod permanenti.",
     "claudeResetCreditsModalTitle": "Krediti għall-irrisettjar ta' Claude",
     "claudeResetCreditsModalExplainer": "Krediti disponibbli għall-irrisettjar ta' Claude u rrisettjar ta' sessjonijiet ta' kull ġimgħa għal dan il-kont.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "Ibbażat fuq osservazzjonijiet reċenti, mhux test dirett. Agħżel kont għad-dettalji.",
     "healthRecovery": "Irkupru mistenni",
     "healthAvailable": "Disponibbli",
@@ -11533,7 +11533,10 @@
     "continue": "Kompli",
     "tabPasteSetupToken": "Token tas-setup",
     "claudeSetupTokenDescription": "Ħaddem `claude setup-token` f'terminal u waħħal it-token li jistampa. Huwa validu għal sena u m'għandux token ta' aġġornament. OmniRoute jibgħat talba waħda ta' test lil Anthropic qabel ma jsalvah.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Qabbad Cursor",

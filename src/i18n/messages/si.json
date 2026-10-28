@@ -11456,7 +11456,10 @@
     "continue": "ඉදිරියට යන්න",
     "tabPasteSetupToken": "සැකසුම් ටෝකනය",
     "claudeSetupTokenDescription": "ටර්මිනලයක `claude setup-token` ධාවනය කර එය මුද්‍රණය කරන ටෝකනය අලවන්න. එය වසරක් සඳහා වලංගු වන අතර නැවුම් කිරීමේ ටෝකනයක් නැත. සුරැකීමට පෙර OmniRoute Anthropic වෙත එක් පරීක්ෂණ ඉල්ලීමක් යවයි.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Cursor සම්බන්ධ කරන්න",

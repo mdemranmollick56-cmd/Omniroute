@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Kvoten er brukt opp; ekstra bruk er tillatt, så tjenesten fortsetter.",
     "healthPaidCreditsBypass": "Kvoten er brukt opp; tilgjengelige betalte kreditter gjør at tjenesten kan fortsette.",
     "healthFilteringBypass": "Kvoten er brukt opp; lokal kvotefiltrering er deaktivert, så tjenesten fortsetter.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Bruk",
     "grokExtraUsageCredits": "Ekstra Brukskreditter",
     "grokAutoTopUp": "Automatisk Påfylling",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Innløsing tilbakestiller umiddelbart de kvalifiserte Claude-bruksgrensene og forbruker denne kreditten permanent.",
     "claudeResetCreditsModalTitle": "Claude-tilbakestillingskreditter",
     "claudeResetCreditsModalExplainer": "Tilgjengelige Claude-tilbakestillingskreditter og ukentlige økttilbakestillinger for denne kontoen.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "Basert på nylige observasjoner, ikke en direkte test. Velg en konto for detaljer.",
     "healthRecovery": "Forventet gjenoppretting",
     "healthAvailable": "Tilgjengelig",
@@ -11456,7 +11456,10 @@
     "continue": "Fortsett",
     "tabPasteSetupToken": "Oppsettstoken",
     "claudeSetupTokenDescription": "Kjør `claude setup-token` i en terminal og lim inn tokenet den skriver ut. Det er gyldig i ett år og har ingen oppdateringstoken. OmniRoute sender én testforespørsel til Anthropic før det lagres.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Koble til markør-IDE",

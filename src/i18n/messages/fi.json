@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Kiintiö on käytetty; lisäkäyttö on sallittu, joten palvelu jatkuu.",
     "healthPaidCreditsBypass": "Kiintiö on käytetty; saatavilla olevat maksulliset krediitit mahdollistavat palvelun jatkumisen.",
     "healthFilteringBypass": "Kiintiö on käytetty; paikallinen kiintiösuodatus on pois käytöstä, joten palvelu jatkuu.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Käyttö",
     "grokExtraUsageCredits": "Lisäkäyttöluottoja",
     "grokAutoTopUp": "Automaattinen Lataus",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Lunastaminen nollaa soveltuvat Claude-käyttörajat välittömästi ja kuluttaa tämän krediitin pysyvästi.",
     "claudeResetCreditsModalTitle": "Claude-nollauskrediitit",
     "claudeResetCreditsModalExplainer": "Käytettävissä olevat Claude-nollauskrediitit ja viikoittaiset istunnon nollaukset tälle tilille.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "Perustuu viimeisimpiin havaintoihin, ei reaaliaikaiseen testiin. Valitse tili nähdäksesi tiedot.",
     "healthRecovery": "Arvioitu palautuminen",
     "healthAvailable": "Saatavilla",
@@ -11456,7 +11456,10 @@
     "continue": "Jatka",
     "tabPasteSetupToken": "Asetustunnus",
     "claudeSetupTokenDescription": "Suorita `claude setup-token` päätteessä ja liitä sen tulostama tunnus. Se on voimassa vuoden, eikä sillä ole päivitystunnusta. OmniRoute lähettää Anthropicille yhden testipyynnön ennen tallentamista.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Yhdistä kohdistin IDE",

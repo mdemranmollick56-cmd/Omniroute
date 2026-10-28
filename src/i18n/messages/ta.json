@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "ஒதுக்கீடு தீர்ந்துவிட்டது; கூடுதல் பயன்பாடு அனுமதிக்கப்பட்டுள்ளதால் சேவை தொடர்கிறது.",
     "healthPaidCreditsBypass": "ஒதுக்கீடு தீர்ந்துவிட்டது; கிடைக்கும் கட்டணக் கிரெடிட்களால் சேவை தொடரலாம்.",
     "healthFilteringBypass": "ஒதுக்கீடு தீர்ந்துவிட்டது; உள்ளூர் ஒதுக்கீட்டு வடிகட்டல் முடக்கப்பட்டுள்ளதால் சேவை தொடர்கிறது.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "பயன்பாடு",
     "grokExtraUsageCredits": "கூடுதல் பயன்பாட்டு கிரெடிட்கள்",
     "grokAutoTopUp": "தானியங்கி மேலேற்றம்",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "மீட்பதன் மூலம் தகுதியுள்ள Claude பயன்பாட்டு வரம்புகள் உடனடியாக மீட்டமைக்கப்படும் மற்றும் இந்தக் கிரெடிட் நிரந்தரமாகப் பயன்படுத்தப்படும்.",
     "claudeResetCreditsModalTitle": "Claude மீட்டமைப்பு கிரெடிட்கள்",
     "claudeResetCreditsModalExplainer": "இந்தக் கணக்கிற்குக் கிடைக்கும் Claude மீட்டமைப்பு கிரெடிட்கள் மற்றும் வாராந்திர அமர்வு மீட்டமைப்புகள்.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "சமீபத்திய கண்காணிப்புகளின் அடிப்படையில், நேரடி சோதனை அல்ல. விவரங்களுக்கு ஒரு கணக்கைத் தேர்ந்தெடுக்கவும்.",
     "healthRecovery": "எதிர்பார்க்கப்படும் மீட்பு நேரம்",
     "healthAvailable": "கிடைக்கிறது",
@@ -11456,7 +11456,10 @@
     "continue": "தொடர்ந்து",
     "tabPasteSetupToken": "அமைவு டோக்கன்",
     "claudeSetupTokenDescription": "டெர்மினலில் `claude setup-token` ஐ இயக்கி, அது அச்சிடும் டோக்கனை ஒட்டவும். இது ஒரு வருடத்திற்குச் செல்லுபடியாகும், புதுப்பிப்பு டோக்கன் இல்லை. சேமிப்பதற்கு முன் OmniRoute Anthropic-க்கு ஒரு சோதனைக் கோரிக்கையை அனுப்புகிறது.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Connect Cursor IDE",

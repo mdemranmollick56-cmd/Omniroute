@@ -9939,6 +9939,10 @@
     "healthExtraUsageBypass": "نفدت الحصة؛ الاستخدام الإضافي مسموح، لذا تستمر الخدمة.",
     "healthPaidCreditsBypass": "نفدت الحصة؛ تتيح الأرصدة المدفوعة المتاحة استمرار الخدمة.",
     "healthFilteringBypass": "نفدت الحصة؛ تصفية الحصة المحلية معطلة، لذا تستمر الخدمة.",
+    "codexPaidCreditsLabel": "أرصدة Codex المدفوعة",
+    "codexPaidCreditsAvailable": "متاح (الرصيد غير مُبلَّغ عنه)",
+    "codexPaidCreditsUnavailable": "غير متاح أو تم بلوغ حد الإنفاق",
+    "codexPaidCreditsUnlimited": "غير محدود",
     "title": "الاستخدام",
     "grokExtraUsageCredits": "رصيد استخدام إضافي",
     "grokAutoTopUp": "إعادة تعبئة تلقائية",
@@ -10395,10 +10399,6 @@
     "confirmRedeemClaudeResetCredit": "يؤدي الاسترداد إلى إعادة تعيين حدود استخدام Claude المؤهلة فورًا واستهلاك هذا الرصيد بشكل دائم.",
     "claudeResetCreditsModalTitle": "أرصدة إعادة تعيين Claude",
     "claudeResetCreditsModalExplainer": "أرصدة إعادة تعيين Claude المتاحة وعمليات إعادة تعيين الجلسات الأسبوعية لهذا الحساب.",
-    "codexPaidCreditsLabel": "أرصدة Codex المدفوعة",
-    "codexPaidCreditsAvailable": "متاح (الرصيد غير مُبلَّغ عنه)",
-    "codexPaidCreditsUnavailable": "غير متاح أو تم بلوغ حد الإنفاق",
-    "codexPaidCreditsUnlimited": "غير محدود",
     "healthAccountHint": "استنادًا إلى أحدث الملاحظات، وليس فحصًا مباشرًا. حدد حسابًا لعرض التفاصيل.",
     "healthRecovery": "وقت الاستعادة المتوقع",
     "healthAvailable": "متاح",
@@ -11533,7 +11533,10 @@
     "continue": "تابع",
     "tabPasteSetupToken": "رمز الإعداد",
     "claudeSetupTokenDescription": "شغّل `claude setup-token` في الطرفية والصق الرمز الذي يطبعه. الرمز صالح لمدة عام واحد ولا يملك رمز تحديث. يرسل OmniRoute طلب اختبار واحدًا إلى Anthropic قبل حفظه.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "ربط IDE Cursor",

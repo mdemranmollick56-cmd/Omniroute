@@ -9939,6 +9939,10 @@
     "healthExtraUsageBypass": "কোটা শেষ; অতিরিক্ত ব্যবহার অনুমোদিত, তাই পরিষেবা চলতে থাকে।",
     "healthPaidCreditsBypass": "কোটা শেষ; উপলব্ধ প্রদত্ত ক্রেডিট দিয়ে পরিষেবা চালিয়ে যাওয়া যায়।",
     "healthFilteringBypass": "কোটা শেষ; স্থানীয় কোটা ফিল্টার বন্ধ, তাই পরিষেবা চলতে থাকে।",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "ব্যবহার",
     "grokExtraUsageCredits": "অতিরিক্ত ব্যবহার ক্রেডিট",
     "grokAutoTopUp": "অটো টপ-আপ",
@@ -10395,10 +10399,6 @@
     "confirmRedeemClaudeResetCredit": "রিডিম করার সাথে সাথে উপযুক্ত Claude ব্যবহারের সীমা রিসেট হয়ে যায় এবং এই ক্রেডিটটি স্থায়ীভাবে ব্যবহৃত হয়।",
     "claudeResetCreditsModalTitle": "Claude রিসেট ক্রেডিট",
     "claudeResetCreditsModalExplainer": "এই অ্যাকাউন্টের জন্য উপলব্ধ Claude রিসেট ক্রেডিট এবং সাপ্তাহিক সেশন রিসেট।",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "সর্বশেষ পর্যবেক্ষণের ভিত্তিতে, সরাসরি পরীক্ষা নয়। বিস্তারিত দেখতে একটি অ্যাকাউন্ট বেছে নিন।",
     "healthRecovery": "প্রত্যাশিত পুনরুদ্ধারের সময়",
     "healthAvailable": "উপলভ্য",
@@ -11533,7 +11533,10 @@
     "continue": "চালিয়ে যান",
     "tabPasteSetupToken": "সেটআপ টোকেন",
     "claudeSetupTokenDescription": "টার্মিনালে `claude setup-token` চালান এবং এটি যে টোকেন প্রিন্ট করে তা পেস্ট করুন। এটি এক বছরের জন্য বৈধ এবং এর কোনো রিফ্রেশ টোকেন নেই। সংরক্ষণের আগে OmniRoute Anthropic-এ একটি পরীক্ষামূলক অনুরোধ পাঠায়।",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Connect Cursor IDE",

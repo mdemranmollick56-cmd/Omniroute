@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Tá an cuóta ídithe; ceadaítear úsáid bhreise, mar sin leanann an tseirbhís ar aghaidh.",
     "healthPaidCreditsBypass": "Tá an cuóta ídithe; ceadaíonn na creidmheasanna íoctha atá ar fáil don tseirbhís leanúint ar aghaidh.",
     "healthFilteringBypass": "Tá an cuóta ídithe; tá scagadh áitiúil cuótaí díchumasaithe, mar sin leanann an tseirbhís ar aghaidh.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Úsáid",
     "grokExtraUsageCredits": "Creidmheachtaí Úsáide Breise",
     "grokAutoTopUp": "Breisiú Uathoibríoch",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Athshocraíonn fuascailt láithreach na teorainneacha úsáide incháilithe Claude agus ídíonn sé an creidmheas seo go buan.",
     "claudeResetCreditsModalTitle": "Creidmheasanna athshocraithe Claude",
     "claudeResetCreditsModalExplainer": "Creidmheasanna athshocraithe Claude agus athshocruithe seisiúin sheachtainiúla atá ar fáil don chuntas seo.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "Bunaithe ar bhreathnuithe le déanaí, ní tástáil bheo. Roghnaigh cuntas le haghaidh sonraí.",
     "healthRecovery": "Am téarnaimh measta",
     "healthAvailable": "Ar Fáil",
@@ -11456,7 +11456,10 @@
     "continue": "Lean ar aghaidh",
     "tabPasteSetupToken": "Comhartha socraithe",
     "claudeSetupTokenDescription": "Rith `claude setup-token` i dteirminéal agus greamaigh an comhartha a phriontálann sé. Tá sé bailí ar feadh bliana agus níl comhartha athnuachana aige. Seolann OmniRoute iarratas tástála amháin chuig Anthropic sula sábhálann sé é.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Ceangail Cursor",

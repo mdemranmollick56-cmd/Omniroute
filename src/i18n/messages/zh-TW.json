@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "額度已用完；已允許額外用量，仍可繼續服務。",
     "healthPaidCreditsBypass": "額度已用完；有可用的付費額度，仍可繼續服務。",
     "healthFilteringBypass": "額度已用完；已關閉本機額度篩選，仍可繼續服務。",
+    "codexPaidCreditsLabel": "Codex 付費額度",
+    "codexPaidCreditsAvailable": "可用（未回報餘額）",
+    "codexPaidCreditsUnavailable": "無法使用或已達支出上限",
+    "codexPaidCreditsUnlimited": "無限",
     "title": "用量",
     "grokExtraUsageCredits": "額外使用積分",
     "grokAutoTopUp": "自動加值",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "兌換將立即重設符合條件的 Claude 使用限額，並永久消耗此點數。",
     "claudeResetCreditsModalTitle": "Claude 重設點數",
     "claudeResetCreditsModalExplainer": "此帳戶可用的 Claude 重設點數與每週工作階段重設次數。",
-    "codexPaidCreditsLabel": "Codex 付費額度",
-    "codexPaidCreditsAvailable": "可用（未回報餘額）",
-    "codexPaidCreditsUnavailable": "無法使用或已達支出上限",
-    "codexPaidCreditsUnlimited": "無限",
     "healthAccountHint": "根據最近觀測判斷目前可用性，並非即時探測。選擇帳號查看詳情。",
     "healthRecovery": "預計恢復時間",
     "healthAvailable": "可用",
@@ -11456,7 +11456,10 @@
     "continue": "繼續",
     "tabPasteSetupToken": "設定權杖",
     "claudeSetupTokenDescription": "在終端機中執行 `claude setup-token`，然後貼上它輸出的權杖。此權杖有效期為一年，沒有重新整理權杖。OmniRoute 會在儲存前向 Anthropic 發送一次測試請求。",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "連線 Cursor IDE",

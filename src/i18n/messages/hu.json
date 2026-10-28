@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "A keret kimerült; a többlethasználat engedélyezett, így a szolgáltatás folytatódik.",
     "healthPaidCreditsBypass": "A keret kimerült; az elérhető fizetett kreditek lehetővé teszik a szolgáltatás folytatását.",
     "healthFilteringBypass": "A keret kimerült; a helyi keretszűrés ki van kapcsolva, így a szolgáltatás folytatódik.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Használat",
     "grokExtraUsageCredits": "További Használati Kreditek",
     "grokAutoTopUp": "Automatikus Feltöltés",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "A beváltás azonnal visszaállítja a jogosult Claude használati korlátokat, és véglegesen felhasználja ezt a kreditet.",
     "claudeResetCreditsModalTitle": "Claude-visszaállítási kreditek",
     "claudeResetCreditsModalExplainer": "Elérhető Claude-visszaállítási kreditek és heti munkamenet-visszaállítások ehhez a fiókhoz.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "A legutóbbi megfigyelések alapján, nem élő teszt. Válasszon fiókot a részletekhez.",
     "healthRecovery": "Várható helyreállás",
     "healthAvailable": "Elérhető",
@@ -11456,7 +11456,10 @@
     "continue": "Folytatás",
     "tabPasteSetupToken": "Beállítási token",
     "claudeSetupTokenDescription": "Futtassa a `claude setup-token` parancsot egy terminálban, és illessze be a kiírt tokent. Egy évig érvényes, és nincs frissítési tokenje. Mentés előtt az OmniRoute egy tesztkérést küld az Anthropicnak.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Csatlakoztassa a kurzor IDE-t",

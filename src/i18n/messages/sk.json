@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Kvóta je vyčerpaná; dodatočné využitie je povolené, takže služba pokračuje.",
     "healthPaidCreditsBypass": "Kvóta je vyčerpaná; dostupné platené kredity umožňujú pokračovanie služby.",
     "healthFilteringBypass": "Kvóta je vyčerpaná; miestne filtrovanie kvót je vypnuté, takže služba pokračuje.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Použitie",
     "grokExtraUsageCredits": "Extra Kredit na Použitie",
     "grokAutoTopUp": "Automatické dobíjanie",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Uplatnenie okamžite resetuje príslušné limity využitia Claude a natrvalo spotrebuje tento kredit.",
     "claudeResetCreditsModalTitle": "Kredity na reset Claude",
     "claudeResetCreditsModalExplainer": "Dostupné kredity na reset Claude a týždenné resety relácií pre tento účet.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "Podľa posledných pozorovaní, nejde o živú kontrolu. Vyberte účet pre podrobnosti.",
     "healthRecovery": "Očakávané obnovenie",
     "healthAvailable": "Dostupné",
@@ -11456,7 +11456,10 @@
     "continue": "Pokračovať",
     "tabPasteSetupToken": "Token z nastavenia",
     "claudeSetupTokenDescription": "Spustite v termináli `claude setup-token` a vložte token, ktorý vypíše. Platí jeden rok a nemá obnovovací token. OmniRoute pred uložením odošle do Anthropic jednu testovaciu požiadavku.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Pripojte kurzorové IDE",

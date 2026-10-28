@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "割り当てを使い切りましたが、追加使用が許可されているためサービスを継続します。",
     "healthPaidCreditsBypass": "割り当てを使い切りましたが、利用可能な有料クレジットでサービスを継続できます。",
     "healthFilteringBypass": "割り当てを使い切りましたが、ローカルの割り当てフィルタリングが無効なためサービスを継続します。",
+    "codexPaidCreditsLabel": "Codex の有料クレジット",
+    "codexPaidCreditsAvailable": "利用可能（残高は未報告）",
+    "codexPaidCreditsUnavailable": "利用不可、または支出上限に達しました",
+    "codexPaidCreditsUnlimited": "無制限",
     "title": "使用法",
     "grokExtraUsageCredits": "追加の使用クレジット",
     "grokAutoTopUp": "自動チャージ",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "引き換えると、対象となる Claude の利用制限が即座にリセットされ、このクレジットは完全に消費されます。",
     "claudeResetCreditsModalTitle": "Claude リセットクレジット",
     "claudeResetCreditsModalExplainer": "このアカウントで利用可能な Claude リセットクレジットおよび週次セッションリセット。",
-    "codexPaidCreditsLabel": "Codex の有料クレジット",
-    "codexPaidCreditsAvailable": "利用可能（残高は未報告）",
-    "codexPaidCreditsUnavailable": "利用不可、または支出上限に達しました",
-    "codexPaidCreditsUnlimited": "無制限",
     "healthAccountHint": "最近の観測に基づく状態であり、リアルタイムの疎通試験ではありません。アカウントを選択すると詳細を表示します。",
     "healthRecovery": "復旧見込み",
     "healthAvailable": "利用可能",
@@ -11456,7 +11456,10 @@
     "continue": "続ける",
     "tabPasteSetupToken": "セットアップトークン",
     "claudeSetupTokenDescription": "ターミナルで `claude setup-token` を実行し、表示されたトークンを貼り付けてください。有効期間は1年で、リフレッシュトークンはありません。OmniRoute は保存前に Anthropic へテストリクエストを1件送信します。",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "カーソルIDEの接続",

@@ -11533,7 +11533,10 @@
     "continue": "გაგრძელება",
     "tabPasteSetupToken": "დაყენების ტოკენი",
     "claudeSetupTokenDescription": "გაუშვით `claude setup-token` ტერმინალში და ჩასვით ტოკენი, რომელსაც ის ბეჭდავს. ის მოქმედებს ერთი წლის განმავლობაში და არ აქვს განახლების ტოკენი. შენახვამდე OmniRoute Anthropic-ს ერთ სატესტო მოთხოვნას უგზავნის.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Cursor-ის დაკავშირება",

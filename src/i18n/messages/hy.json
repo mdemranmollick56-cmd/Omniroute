@@ -11456,7 +11456,10 @@
     "continue": "Շարունակել",
     "tabPasteSetupToken": "Կարգավորման թոքեն",
     "claudeSetupTokenDescription": "Գործարկեք `claude setup-token`-ը տերմինալում և տեղադրեք այն թոքենը, որը տպում է։ Այն վավեր է մեկ տարի և չունի թարմացման թոքեն։ Պահպանելուց առաջ OmniRoute-ը մեկ փորձնական հարցում է ուղարկում Anthropic-ին։",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Միացնել Cursor-ը",

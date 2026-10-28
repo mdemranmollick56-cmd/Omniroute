@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Kota tükendi; ek kullanıma izin verildiği için hizmet devam ediyor.",
     "healthPaidCreditsBypass": "Kota tükendi; kullanılabilir ücretli krediler hizmetin sürmesini sağlıyor.",
     "healthFilteringBypass": "Kota tükendi; yerel kota filtreleme kapalı olduğu için hizmet devam ediyor.",
+    "codexPaidCreditsLabel": "Ücretli Codex kredileri",
+    "codexPaidCreditsAvailable": "Kullanılabilir (bakiye bildirilmedi)",
+    "codexPaidCreditsUnavailable": "Kullanılamıyor veya harcama limitine ulaşıldı",
+    "codexPaidCreditsUnlimited": "Sınırsız",
     "title": "Kullanım",
     "grokExtraUsageCredits": "Ekstra Kullanım Kredileri",
     "grokAutoTopUp": "Otomatik Yenileme",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Kullanmak, uygun Claude kullanım limitlerini anında sıfırlar ve bu krediyi kalıcı olarak tüketir.",
     "claudeResetCreditsModalTitle": "Claude sıfırlama kredileri",
     "claudeResetCreditsModalExplainer": "Bu hesap için kullanılabilir Claude sıfırlama kredileri ve haftalık oturum sıfırlamaları.",
-    "codexPaidCreditsLabel": "Ücretli Codex kredileri",
-    "codexPaidCreditsAvailable": "Kullanılabilir (bakiye bildirilmedi)",
-    "codexPaidCreditsUnavailable": "Kullanılamıyor veya harcama limitine ulaşıldı",
-    "codexPaidCreditsUnlimited": "Sınırsız",
     "healthAccountHint": "Son gözlemlere dayanır, canlı bir test değildir. Ayrıntılar için bir hesap seçin.",
     "healthRecovery": "Beklenen düzelme zamanı",
     "healthAvailable": "Mevcut",
@@ -11456,7 +11456,10 @@
     "continue": "Devam Et",
     "tabPasteSetupToken": "Kurulum belirteci",
     "claudeSetupTokenDescription": "Bir terminalde `claude setup-token` komutunu çalıştırın ve yazdırdığı belirteci yapıştırın. Belirteç bir yıl geçerlidir ve yenileme belirteci yoktur. OmniRoute, kaydetmeden önce Anthropic'e bir test isteği gönderir.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "İmleç IDE'sini bağlayın",

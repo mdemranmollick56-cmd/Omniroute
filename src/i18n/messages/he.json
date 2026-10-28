@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "המכסה נוצלה; שימוש נוסף מותר, ולכן השירות נמשך.",
     "healthPaidCreditsBypass": "המכסה נוצלה; יתרת קרדיטים בתשלום מאפשרת את המשך השירות.",
     "healthFilteringBypass": "המכסה נוצלה; סינון המכסות המקומי כבוי, ולכן השירות נמשך.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "שימוש",
     "grokExtraUsageCredits": "קרדיטים נוספים לשימוש",
     "grokAutoTopUp": "טעינה אוטומטית",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "מימוש מאפס מיידית את מגבלות השימוש הזכאיות של Claude ומנצל קרדיט זה לצמיתות.",
     "claudeResetCreditsModalTitle": "קרדיטים לאיפוס Claude",
     "claudeResetCreditsModalExplainer": "קרדיטים זמינים לאיפוס Claude ואיפוסי סשן שבועיים עבור חשבון זה.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "מבוסס על תצפיות אחרונות, לא בדיקה חיה. בחרו חשבון לפרטים.",
     "healthRecovery": "מועד התאוששות צפוי",
     "healthAvailable": "זמין",
@@ -11456,7 +11456,10 @@
     "continue": "להמשיך",
     "tabPasteSetupToken": "אסימון הגדרה",
     "claudeSetupTokenDescription": "הריצו `claude setup-token` במסוף והדביקו את האסימון שהוא מדפיס. הוא תקף לשנה אחת ואין לו אסימון רענון. OmniRoute שולח בקשת בדיקה אחת ל-Anthropic לפני שמירתו.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "חבר את הסמן IDE",

@@ -11533,7 +11533,10 @@
     "continue": "തുടരുക",
     "tabPasteSetupToken": "സജ്ജീകരണ ടോക്കൺ",
     "claudeSetupTokenDescription": "ടെർമിനലിൽ `claude setup-token` പ്രവർത്തിപ്പിച്ച് അത് പ്രിന്റ് ചെയ്യുന്ന ടോക്കൺ ഒട്ടിക്കുക. ഇത് ഒരു വർഷത്തേക്ക് സാധുവാണ്, ഇതിന് റിഫ്രഷ് ടോക്കൺ ഇല്ല. സംരക്ഷിക്കുന്നതിന് മുമ്പ് OmniRoute Anthropic-ലേക്ക് ഒരു ടെസ്റ്റ് അഭ്യർത്ഥന അയയ്ക്കുന്നു.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Cursor കണക്റ്റ് ചെയ്യുക",

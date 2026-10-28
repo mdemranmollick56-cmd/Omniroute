@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "ક્વોટા પૂરો થયો છે; વધારાના ઉપયોગની મંજૂરી હોવાથી સેવા ચાલુ રહે છે.",
     "healthPaidCreditsBypass": "ક્વોટા પૂરો થયો છે; ઉપલબ્ધ ચૂકવેલ ક્રેડિટથી સેવા ચાલુ રહી શકે છે.",
     "healthFilteringBypass": "ક્વોટા પૂરો થયો છે; સ્થાનિક ક્વોટા ફિલ્ટર બંધ હોવાથી સેવા ચાલુ રહે છે.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "વપરાશ",
     "grokExtraUsageCredits": "અતિરિક્ત ઉપયોગ ક્રેડિટ",
     "grokAutoTopUp": "ઓટો ટોપ-અપ",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "રીડીમ કરવાથી પાત્ર Claude વપરાશ મર્યાદાઓ તરત જ રીસેટ થઈ જાય છે અને આ ક્રેડિટ કાયમી ધોરણે વપરાઈ જાય છે.",
     "claudeResetCreditsModalTitle": "Claude રીસેટ ક્રેડિટ્સ",
     "claudeResetCreditsModalExplainer": "આ એકાઉન્ટ માટે ઉપલબ્ધ Claude રીસેટ ક્રેડિટ્સ અને સાપ્તાહિક સત્ર રીસેટ્સ.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "તાજેતરના અવલોકનો પર આધારિત છે, જીવંત પરીક્ષણ નથી. વિગતો માટે ખાતું પસંદ કરો.",
     "healthRecovery": "અપેક્ષિત પુનઃપ્રાપ્તિનો સમય",
     "healthAvailable": "ઉપલબ્ધ",
@@ -11456,7 +11456,10 @@
     "continue": "ચાલુ રાખો",
     "tabPasteSetupToken": "સેટઅપ ટોકન",
     "claudeSetupTokenDescription": "ટર્મિનલમાં `claude setup-token` ચલાવો અને તે જે ટોકન છાપે તે પેસ્ટ કરો. તે એક વર્ષ માટે માન્ય છે અને તેમાં કોઈ રિફ્રેશ ટોકન નથી. સાચવતા પહેલાં OmniRoute Anthropic ને એક પરીક્ષણ વિનંતી મોકલે છે.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Connect Cursor IDE",

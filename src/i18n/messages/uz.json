@@ -11456,7 +11456,10 @@
     "continue": "Davom etish",
     "tabPasteSetupToken": "Sozlash tokeni",
     "claudeSetupTokenDescription": "Terminalda `claude setup-token` buyrug'ini ishga tushiring va u chiqargan tokenni joylashtiring. U bir yil amal qiladi va yangilash tokeniga ega emas. OmniRoute saqlashdan oldin Anthropic'ga bitta sinov so'rovini yuboradi.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Cursor’ni ulash",

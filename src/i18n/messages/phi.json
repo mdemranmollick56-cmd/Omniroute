@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Ubos na ang quota; pinapayagan ang dagdag na paggamit kaya nagpapatuloy ang serbisyo.",
     "healthPaidCreditsBypass": "Ubos na ang quota; maaaring magpatuloy ang serbisyo gamit ang magagamit na bayad na kredito.",
     "healthFilteringBypass": "Ubos na ang quota; naka-off ang lokal na pagsala ng quota kaya nagpapatuloy ang serbisyo.",
+    "codexPaidCreditsLabel": "Mga bayad na kredito sa Codex",
+    "codexPaidCreditsAvailable": "Magagamit (hindi iniulat ang balanse)",
+    "codexPaidCreditsUnavailable": "Hindi magagamit o naabot na ang limitasyon sa paggastos",
+    "codexPaidCreditsUnlimited": "Walang limitasyon",
     "title": "Paggamit",
     "grokExtraUsageCredits": "Karagdagang Paggamit ng Mga Kredito",
     "grokAutoTopUp": "Awtomatikong Pagdaragdag",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Ang pag-redeem ay agad na nagre-reset ng mga kwalipikadong limitasyon sa paggamit ng Claude at permanenteng gagamitin ang credit na ito.",
     "claudeResetCreditsModalTitle": "Mga credit sa pag-reset ng Claude",
     "claudeResetCreditsModalExplainer": "Mga available na credit sa pag-reset ng Claude at lingguhang pag-reset ng session para sa account na ito.",
-    "codexPaidCreditsLabel": "Mga bayad na kredito sa Codex",
-    "codexPaidCreditsAvailable": "Magagamit (hindi iniulat ang balanse)",
-    "codexPaidCreditsUnavailable": "Hindi magagamit o naabot na ang limitasyon sa paggastos",
-    "codexPaidCreditsUnlimited": "Walang limitasyon",
     "healthAccountHint": "Batay sa mga kamakailang obserbasyon, hindi sa live na pagsubok. Pumili ng account para sa mga detalye.",
     "healthRecovery": "Inaasahang pagbabalik",
     "healthAvailable": "Magagamit",
@@ -11456,7 +11456,10 @@
     "continue": "Magpatuloy",
     "tabPasteSetupToken": "Setup token",
     "claudeSetupTokenDescription": "Patakbuhin ang `claude setup-token` sa isang terminal at i-paste ang token na ipi-print nito. Valid ito sa loob ng isang taon at walang refresh token. Nagpapadala ang OmniRoute ng isang test request sa Anthropic bago ito i-save.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Ikonekta ang Cursor IDE",

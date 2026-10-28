@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "할당량을 소진했지만 추가 사용이 허용되어 서비스를 계속합니다.",
     "healthPaidCreditsBypass": "할당량을 소진했지만 사용 가능한 유료 크레딧으로 서비스를 계속합니다.",
     "healthFilteringBypass": "할당량을 소진했지만 로컬 할당량 필터링이 꺼져 있어 서비스를 계속합니다.",
+    "codexPaidCreditsLabel": "Codex 유료 크레딧",
+    "codexPaidCreditsAvailable": "사용 가능(잔액 미보고)",
+    "codexPaidCreditsUnavailable": "사용 불가 또는 지출 한도 도달",
+    "codexPaidCreditsUnlimited": "무제한",
     "title": "사용량",
     "grokExtraUsageCredits": "추가 사용 크레딧",
     "grokAutoTopUp": "자동 충전",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "사용 시 대상 Claude 사용 한도가 즉시 초기화되며 이 크레딧은 영구적으로 소진됩니다.",
     "claudeResetCreditsModalTitle": "Claude 초기화 크레딧",
     "claudeResetCreditsModalExplainer": "이 계정에서 사용 가능한 Claude 초기화 크레딧 및 주간 세션 초기화입니다.",
-    "codexPaidCreditsLabel": "Codex 유료 크레딧",
-    "codexPaidCreditsAvailable": "사용 가능(잔액 미보고)",
-    "codexPaidCreditsUnavailable": "사용 불가 또는 지출 한도 도달",
-    "codexPaidCreditsUnlimited": "무제한",
     "healthAccountHint": "최근 관측에 기반한 상태이며 실시간 연결 테스트가 아닙니다. 계정을 선택하면 세부 정보를 볼 수 있습니다.",
     "healthRecovery": "예상 복구 시간",
     "healthAvailable": "사용 가능",
@@ -11456,7 +11456,10 @@
     "continue": "계속하다",
     "tabPasteSetupToken": "설정 토큰",
     "claudeSetupTokenDescription": "터미널에서 `claude setup-token`을 실행하고 출력된 토큰을 붙여넣으세요. 이 토큰은 1년간 유효하며 새로 고침 토큰이 없습니다. OmniRoute는 저장하기 전에 Anthropic에 테스트 요청을 한 번 보냅니다.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Cursor IDE 연결",

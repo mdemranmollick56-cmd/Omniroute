@@ -9939,6 +9939,10 @@
     "healthExtraUsageBypass": "额度已用完；已允许额外用量，仍可继续服务。",
     "healthPaidCreditsBypass": "额度已用完；有可用的付费额度，仍可继续服务。",
     "healthFilteringBypass": "额度已用完；已关闭本地额度过滤，仍可继续服务。",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "用量",
     "grokExtraUsageCredits": "额外使用积分",
     "grokAutoTopUp": "自动充值",
@@ -10395,10 +10399,6 @@
     "confirmRedeemClaudeResetCredit": "兑换将立即重置符合条件的 Claude 使用限额，并永久消耗此点数。",
     "claudeResetCreditsModalTitle": "Claude 重置点数",
     "claudeResetCreditsModalExplainer": "此账户可用的 Claude 重置点数和每周会话重置次数。",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "根据最近观测判断当前可用性，并非实时探活。选择账号查看详情。",
     "healthRecovery": "预计恢复时间",
     "healthAvailable": "可用",
@@ -11533,7 +11533,10 @@
     "continue": "继续",
     "tabPasteSetupToken": "设置令牌",
     "claudeSetupTokenDescription": "在终端中运行 `claude setup-token`，然后粘贴它输出的令牌。该令牌有效期为一年，没有刷新令牌。OmniRoute 会在保存前向 Anthropic 发送一次测试请求。",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "连接 Cursor IDE",

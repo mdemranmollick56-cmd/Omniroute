@@ -11533,7 +11533,10 @@
     "continue": "ဆက်လုပ်ရန်",
     "tabPasteSetupToken": "စနစ်ထည့်သွင်းမှု တိုကင်",
     "claudeSetupTokenDescription": "တာမီနယ်တွင် `claude setup-token` ကို လုပ်ဆောင်ပြီး ၎င်းထုတ်ပြသော တိုကင်ကို ကူးထည့်ပါ။ ၎င်းသည် တစ်နှစ်အထိ အကျုံးဝင်ပြီး ပြန်လည်စတင်ရန် တိုကင် မရှိပါ။ မသိမ်းဆည်းမီ OmniRoute သည် Anthropic သို့ စမ်းသပ်တောင်းဆိုမှု တစ်ခု ပို့ပါသည်။",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Cursor ကို ချိတ်ဆက်ရန်",

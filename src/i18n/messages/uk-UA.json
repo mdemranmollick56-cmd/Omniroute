@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Квоту вичерпано; додаткове використання дозволено, тому обслуговування триває.",
     "healthPaidCreditsBypass": "Квоту вичерпано; доступні платні кредити дозволяють продовжити обслуговування.",
     "healthFilteringBypass": "Квоту вичерпано; локальне фільтрування квот вимкнено, тому обслуговування триває.",
+    "codexPaidCreditsLabel": "Платні кредити Codex",
+    "codexPaidCreditsAvailable": "Доступно (баланс не повідомляється)",
+    "codexPaidCreditsUnavailable": "Недоступно або досягнуто ліміт витрат",
+    "codexPaidCreditsUnlimited": "Без обмежень",
     "title": "Використання",
     "grokExtraUsageCredits": "Додаткові кредитні кошти",
     "grokAutoTopUp": "Автоматичне поповнення",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Активація негайно скидає відповідні ліміти використання Claude та безповоротно витрачає цей кредит.",
     "claudeResetCreditsModalTitle": "Кредити для скидання Claude",
     "claudeResetCreditsModalExplainer": "Доступні кредити для скидання Claude та щотижневі скидання сесій для цього облікового запису.",
-    "codexPaidCreditsLabel": "Платні кредити Codex",
-    "codexPaidCreditsAvailable": "Доступно (баланс не повідомляється)",
-    "codexPaidCreditsUnavailable": "Недоступно або досягнуто ліміт витрат",
-    "codexPaidCreditsUnlimited": "Без обмежень",
     "healthAccountHint": "За останніми спостереженнями, без перевірки в реальному часі. Виберіть обліковий запис для подробиць.",
     "healthRecovery": "Очікуване відновлення",
     "healthAvailable": "Доступно",
@@ -11456,7 +11456,10 @@
     "continue": "Продовжити",
     "tabPasteSetupToken": "Токен налаштування",
     "claudeSetupTokenDescription": "Виконайте `claude setup-token` у терміналі та вставте виведений токен. Він дійсний один рік і не має токена оновлення. Перед збереженням OmniRoute надсилає до Anthropic один тестовий запит.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Підключіть Cursor IDE",

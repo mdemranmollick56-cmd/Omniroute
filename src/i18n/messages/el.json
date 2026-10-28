@@ -9862,6 +9862,10 @@
     "healthExtraUsageBypass": "Το όριο εξαντλήθηκε· επιτρέπεται επιπλέον χρήση, οπότε η υπηρεσία συνεχίζεται.",
     "healthPaidCreditsBypass": "Το όριο εξαντλήθηκε· οι διαθέσιμες πληρωμένες πιστώσεις επιτρέπουν τη συνέχιση της υπηρεσίας.",
     "healthFilteringBypass": "Το όριο εξαντλήθηκε· το τοπικό φιλτράρισμα ορίων είναι απενεργοποιημένο, οπότε η υπηρεσία συνεχίζεται.",
+    "codexPaidCreditsLabel": "Paid Codex credits",
+    "codexPaidCreditsAvailable": "Available (balance not reported)",
+    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
+    "codexPaidCreditsUnlimited": "Unlimited",
     "title": "Χρήση",
     "grokExtraUsageCredits": "Πρόσθετες πιστώσεις χρήσης",
     "grokAutoTopUp": "Αυτόματη αναπλήρωση",
@@ -10318,10 +10322,6 @@
     "confirmRedeemClaudeResetCredit": "Η εξαργύρωση επαναφέρει άμεσα τα επιλέξιμα όρια χρήσης Claude και καταναλώνει οριστικά αυτήν την πίστωση.",
     "claudeResetCreditsModalTitle": "Πιστώσεις επαναφοράς Claude",
     "claudeResetCreditsModalExplainer": "Διαθέσιμες πιστώσεις επαναφοράς Claude και εβδομαδιαίες επαναφορές συνεδριών για αυτόν τον λογαριασμό.",
-    "codexPaidCreditsLabel": "Paid Codex credits",
-    "codexPaidCreditsAvailable": "Available (balance not reported)",
-    "codexPaidCreditsUnavailable": "Unavailable or spending limit reached",
-    "codexPaidCreditsUnlimited": "Unlimited",
     "healthAccountHint": "Με βάση τις τελευταίες παρατηρήσεις, όχι ζωντανό έλεγχο. Επιλέξτε λογαριασμό για λεπτομέρειες.",
     "healthRecovery": "Αναμενόμενη αποκατάσταση",
     "healthAvailable": "Διαθέσιμο",
@@ -11456,7 +11456,10 @@
     "continue": "Συνέχεια",
     "tabPasteSetupToken": "Διακριτικό ρύθμισης",
     "claudeSetupTokenDescription": "Εκτελέστε το `claude setup-token` σε ένα τερματικό και επικολλήστε το διακριτικό που εμφανίζει. Ισχύει για ένα έτος και δεν έχει διακριτικό ανανέωσης. Το OmniRoute στέλνει ένα δοκιμαστικό αίτημα στην Anthropic πριν το αποθηκεύσει.",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Σύνδεση στο Cursor",

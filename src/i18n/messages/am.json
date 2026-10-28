@@ -11533,7 +11533,10 @@
     "continue": "ቀጥል",
     "tabPasteSetupToken": "የማዋቀሪያ ቶከን",
     "claudeSetupTokenDescription": "በተርሚናል ውስጥ `claude setup-token` ያሂዱ እና የሚያሳየውን ቶከን ይለጥፉ። ለአንድ ዓመት ያገለግላል እና የማደሻ ቶከን የለውም። OmniRoute ከማስቀመጡ በፊት አንድ የሙከራ ጥያቄ ወደ Anthropic ይልካል።",
-    "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
+    "claudeSetupTokenPlaceholder": "sk-ant-oat01-...",
+    "tabPasteRefreshToken": "__MISSING__:Refresh Token",
+    "antigravityRefreshTokenDescription": "__MISSING__:Paste your Google OAuth refresh token for Antigravity. OmniRoute validates and exchanges it before saving.",
+    "antigravityRefreshTokenPlaceholder": "__MISSING__:1//..."
   },
   "cursorAuthModal": {
     "title": "Cursorን አገናኝ",
