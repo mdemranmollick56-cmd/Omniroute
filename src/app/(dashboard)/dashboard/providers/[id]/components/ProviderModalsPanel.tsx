@@ -8,7 +8,6 @@ import {
   KiroOAuthWrapper,
   CursorAuthModal,
   TraeAuthModal,
-  RaycastAuthModal,
   ProxyConfigModal,
 } from "@/shared/components";
 import RiskNoticeModal from "../../components/RiskNoticeModal";
@@ -25,6 +24,7 @@ import { AdaptaTutorialModal } from "./AdaptaTutorialModal";
 import { ImportCodexAuthModal, ApplyCodexAuthModal } from "./modals/ImportCodexAuthModal";
 import { ImportClaudeAuthModal, ApplyClaudeAuthModal } from "./modals/ImportClaudeAuthModal";
 import ImportGrokCliAuthModal from "./modals/ImportGrokCliAuthModal";
+import { ImportAgyAuthModal } from "./modals/ImportAgyAuthModal";
 import { type ConnectionRowConnection } from "./ConnectionRow";
 import { type BatchTestResults } from "../hooks/useProviderConnections";
 import { type ConnectionDeleteConfirmState } from "../hooks/useConnectionDeleteConfirm";
@@ -55,7 +55,7 @@ interface ProviderModalsPanelProps {
   isCommandCode: boolean;
   isUpstreamProxyProvider: boolean;
   subscriptionRisk: boolean;
-  existingConnectionCount?: number;
+  existingConnectionNames?: string[];
   // Risk notice
   showRiskNoticeModal: boolean;
   handleConfirmRiskNotice: () => void;
@@ -128,6 +128,9 @@ interface ProviderModalsPanelProps {
   handleApplyClaudeAuthLocal: (id: string) => Promise<void>;
   importClaudeModalOpen: boolean;
   setImportClaudeModalOpen: (open: boolean) => void;
+  // Antigravity auth
+  importAgyModalOpen?: boolean;
+  setImportAgyModalOpen?: (open: boolean) => void;
   // Grok Build auth
   importGrokCliModalOpen: boolean;
   setImportGrokCliModalOpen: (open: boolean) => void;
@@ -138,7 +141,7 @@ interface ProviderModalsPanelProps {
   // Proxy config
   proxyTarget: ProxyTarget | null;
   setProxyTarget: (t: ProxyTarget | null) => void;
-  fetchProxyConfig: () => Promise<void>;
+  refreshProxyState: () => Promise<void>;
   // Import progress
   importProgress: ImportProgress;
   showImportModal: boolean;
@@ -157,7 +160,7 @@ export default function ProviderModalsPanel({
   isCcCompatible,
   isUpstreamProxyProvider,
   subscriptionRisk,
-  existingConnectionCount,
+  existingConnectionNames,
   showRiskNoticeModal,
   handleConfirmRiskNotice,
   handleCancelRiskNotice,
@@ -215,6 +218,8 @@ export default function ProviderModalsPanel({
   handleApplyClaudeAuthLocal,
   importClaudeModalOpen,
   setImportClaudeModalOpen,
+  importAgyModalOpen,
+  setImportAgyModalOpen,
   importGrokCliModalOpen,
   setImportGrokCliModalOpen,
   batchTestResults,
@@ -222,7 +227,7 @@ export default function ProviderModalsPanel({
   emailsVisible,
   proxyTarget,
   setProxyTarget,
-  fetchProxyConfig,
+  refreshProxyState,
   importProgress,
   showImportModal,
   setShowImportModal,
@@ -281,13 +286,6 @@ export default function ProviderModalsPanel({
             onSuccess={handleOAuthSuccess}
             onClose={() => setShowOAuthModal(false)}
           />
-        ) : providerId === "raycast" ? (
-          <RaycastAuthModal
-            isOpen={showOAuthModal}
-            reauthConnection={reauthConnection}
-            onSuccess={handleOAuthSuccess}
-            onClose={() => setShowOAuthModal(false)}
-          />
         ) : (
           <OAuthModal
             isOpen={showOAuthModal}
@@ -312,14 +310,16 @@ export default function ProviderModalsPanel({
           }}
         />
       )}
-      {!isUpstreamProxyProvider && (
+      {/* Mount only while open: closing drops the whole form, so a reopened
+          modal never shows the previous credentials. */}
+      {!isUpstreamProxyProvider && showAddApiKeyModal && (
         <AddApiKeyModal
           isOpen={showAddApiKeyModal}
           provider={providerId}
           providerName={providerInfo.name}
           providerWebsite={providerInfo.website}
           initialBaseUrl={siliconFlowInitialBaseUrl}
-          existingConnectionCount={existingConnectionCount}
+          existingConnectionNames={existingConnectionNames}
           isCompatible={isCompatible}
           isAnthropic={isAnthropicProtocolCompatible}
           isCcCompatible={isCcCompatible}
@@ -436,6 +436,16 @@ export default function ProviderModalsPanel({
           }}
         />
       )}
+      {(providerId === "antigravity" || providerId === "agy") && importAgyModalOpen && (
+        <ImportAgyAuthModal
+          key="import-agy-modal"
+          onClose={() => setImportAgyModalOpen?.(false)}
+          onSuccess={() => {
+            setImportAgyModalOpen?.(false);
+            void fetchConnections();
+          }}
+        />
+      )}
       <BatchTestResultsModal
         batchTestResults={batchTestResults}
         providerInfo={providerInfo}
@@ -452,7 +462,7 @@ export default function ProviderModalsPanel({
           levelId={proxyTarget.id}
           levelLabel={proxyTarget.label}
           onSaved={() => {
-            void fetchProxyConfig();
+            void refreshProxyState();
           }}
         />
       )}
@@ -460,7 +470,11 @@ export default function ProviderModalsPanel({
         importProgress={importProgress}
         isOpen={showImportModal}
         onClose={() => {
-          if (importProgress.phase === "done" || importProgress.phase === "error") {
+          if (
+            importProgress.phase === "done" ||
+            importProgress.phase === "error" ||
+            importProgress.phase === "warning"
+          ) {
             setShowImportModal(false);
           }
         }}
