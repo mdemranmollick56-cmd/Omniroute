@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count} કોમ્બોમાં વપરાયેલ: {combos}",
+    "openComboTooltip": "કોમ્બોઝ ખોલો — {combo} દ્વારા વપરાયેલ"
   },
   "settings": {
     "title": "સેટિંગ્સ",
@@ -8938,7 +8940,9 @@
         "financial": "નાણાકીય",
         "brazilian": "બ્રાઝિલિયન",
         "usa": "યુએસએ",
-        "full": "સંપૂર્ણ"
+        "full": "સંપૂર્ણ",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (દક્ષિણ આફ્રિકા)"
       },
       "builtinTypes": "બિલ્ટ-ઇન પ્રકારો",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4 સરનામાં",
         "ipv6_address": "IPv6 સરનામાં",
         "aws_key": "AWS ઍક્સેસ કી",
-        "api_key_generic": "API કી અને ટોકન"
+        "api_key_generic": "API કી અને ટોકન",
+        "iban": "IBAN બેંક એકાઉન્ટ નંબર",
+        "eu_vat": "EU VAT નંબરો",
+        "es_dni_nie": "સ્પેનિશ DNI / NIE",
+        "it_codice_fiscale": "ઇટાલિયન કોડિસ ફિસ્કેલ",
+        "pl_pesel": "પોલિશ PESEL",
+        "nl_bsn": "ડચ BSN",
+        "de_steuer_id": "જર્મન Steuer-ID",
+        "se_personnummer": "સ્વીડિશ વ્યક્તિ સંખ્યા",
+        "za_id": "દક્ષિણ આફ્રિકાના ID નંબરો",
+        "za_phone": "દક્ષિણ આફ્રિકાના ફોન નંબર",
+        "za_vat": "દક્ષિણ આફ્રિકાના VAT નંબરો",
+        "za_tax_ref": "દક્ષિણ આફ્રિકાના કર સંદર્ભો"
       },
       "customPatterns": "કસ્ટમ પેટર્ન",
       "customPatternsDesc": "મેળ [CUSTOM_REDACTED] થી બદલાય છે. વધુમાં વધુ {max} પેટર્ન. વિનાશક બેકટ્રેકિંગના જોખમવાળા પેટર્ન નકારવામાં આવે છે.",
@@ -12811,7 +12827,8 @@
     "title": "પ્રદાતા આંકડા",
     "description": "પ્રતિ-પ્રદાતા અને પ્રતિ-મોડલ ટ્રાફિક, વિલંબ અને સફળતા દર",
     "combo": "કોમ્બો",
-    "toggleModels": "{provider} માટે મોડલ્સ બતાવો"
+    "toggleModels": "{provider} માટે મોડલ્સ બતાવો",
+    "windowSince": "{date} થી"
   },
   "relay": {
     "title": "સર્વરલેસ રિલે પ્રોક્સીઝ",

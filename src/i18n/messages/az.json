@@ -6912,7 +6912,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count} kombinasiyada istifadə olunur: {combos}",
+    "openComboTooltip": "Kombinasiyaları aç — {combo} tərəfindən istifadə olunur"
   },
   "settings": {
     "title": "Parametrlər",
@@ -9015,7 +9017,9 @@
         "financial": "Maliyyə",
         "brazilian": "Braziliya",
         "usa": "ABŞ",
-        "full": "Tam"
+        "full": "Tam",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (Cənubi Afrika)"
       },
       "builtinTypes": "Daxili növlər",
       "types": {
@@ -9029,7 +9033,19 @@
         "ip_address": "IPv4 ünvanları",
         "ipv6_address": "IPv6 ünvanları",
         "aws_key": "AWS giriş açarları",
-        "api_key_generic": "API açarları və tokenlər"
+        "api_key_generic": "API açarları və tokenlər",
+        "iban": "IBAN bank hesab nömrələri",
+        "eu_vat": "EU VAT nömrələri",
+        "es_dni_nie": "İspan DNI / NIE",
+        "it_codice_fiscale": "İtalyan Kodeksi Fiscale",
+        "pl_pesel": "Polşa PESEL",
+        "nl_bsn": "holland BSN",
+        "de_steuer_id": "Alman Steuer-ID",
+        "se_personnummer": "İsveçli kadr",
+        "za_id": "Cənubi Afrika ID nömrələri",
+        "za_phone": "Cənubi Afrika telefon nömrələri",
+        "za_vat": "Cənubi Afrika VAT nömrələri",
+        "za_tax_ref": "Cənubi Afrika vergi istinadları"
       },
       "customPatterns": "Fərdi nümunələr",
       "customPatternsDesc": "Uyğunluqlar [CUSTOM_REDACTED] ilə əvəz olunur. Ən çox {max} nümunə. Fəlakətli geri izləmə riski olan nümunələr rədd edilir.",
@@ -12888,7 +12904,8 @@
     "title": "Provayder statistikası",
     "description": "Provayder və model üzrə trafik, gecikmə və uğur göstəriciləri",
     "combo": "Kombinasiya",
-    "toggleModels": "{provider} üçün modelləri göstər"
+    "toggleModels": "{provider} üçün modelləri göstər",
+    "windowSince": "{date} tarixindən"
   },
   "relay": {
     "title": "Serverless Relay proksiləri",

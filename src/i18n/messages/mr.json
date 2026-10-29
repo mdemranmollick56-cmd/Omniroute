@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count} कॉम्बोमध्ये वापरले: {combos}",
+    "openComboTooltip": "कॉम्बो उघडा — {combo} द्वारे वापरले"
   },
   "settings": {
     "title": "सेटिंग्ज",
@@ -8938,7 +8940,9 @@
         "financial": "आर्थिक",
         "brazilian": "ब्राझिलियन",
         "usa": "अमेरिका",
-        "full": "संपूर्ण"
+        "full": "संपूर्ण",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (दक्षिण आफ्रिका)"
       },
       "builtinTypes": "अंगभूत प्रकार",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4 पत्ते",
         "ipv6_address": "IPv6 पत्ते",
         "aws_key": "AWS प्रवेश की",
-        "api_key_generic": "API की आणि टोकन"
+        "api_key_generic": "API की आणि टोकन",
+        "iban": "IBAN बँक खाते क्रमांक",
+        "eu_vat": "EU VAT क्रमांक",
+        "es_dni_nie": "स्पॅनिश DNI / NIE",
+        "it_codice_fiscale": "इटालियन कोडिस फिस्केल",
+        "pl_pesel": "पोलिश PESEL",
+        "nl_bsn": "डच BSN",
+        "de_steuer_id": "जर्मन Steuer-ID",
+        "se_personnummer": "स्वीडिश व्यक्ती संख्या",
+        "za_id": "दक्षिण आफ्रिकन ID क्रमांक",
+        "za_phone": "दक्षिण आफ्रिकन फोन नंबर",
+        "za_vat": "दक्षिण आफ्रिकन VAT क्रमांक",
+        "za_tax_ref": "दक्षिण आफ्रिकन कर संदर्भ"
       },
       "customPatterns": "सानुकूल पॅटर्न",
       "customPatternsDesc": "जुळण्या [CUSTOM_REDACTED] ने बदलल्या जातात. जास्तीत जास्त {max} पॅटर्न. विनाशकारी बॅकट्रॅकिंगचा धोका असलेले पॅटर्न नाकारले जातात.",
@@ -12811,7 +12827,8 @@
     "title": "प्रदाता आकडेवारी",
     "description": "प्रत्येक प्रदाता आणि प्रत्येक मॉडेलनुसार ट्रॅफिक, विलंब आणि यशाचे दर",
     "combo": "संयोजन",
-    "toggleModels": "{provider} ची मॉडेल दाखवा"
+    "toggleModels": "{provider} ची मॉडेल दाखवा",
+    "windowSince": "{date} पासून"
   },
   "relay": {
     "title": "सर्व्हरलेस रिले प्रॉक्सी",

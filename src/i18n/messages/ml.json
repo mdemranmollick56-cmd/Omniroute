@@ -6912,7 +6912,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count} കോംബോകളിൽ ഉപയോഗിക്കുന്നു: {combos}",
+    "openComboTooltip": "കോംബോകൾ തുറക്കുക — {combo} ഉപയോഗിക്കുന്നു"
   },
   "settings": {
     "title": "ക്രമീകരണങ്ങൾ",
@@ -9015,7 +9017,9 @@
         "financial": "സാമ്പത്തികം",
         "brazilian": "ബ്രസീലിയൻ",
         "usa": "യുഎസ്എ",
-        "full": "പൂർണ്ണം"
+        "full": "പൂർണ്ണം",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (ദക്ഷിണാഫ്രിക്ക)"
       },
       "builtinTypes": "ബിൽറ്റ്-ഇൻ തരങ്ങൾ",
       "types": {
@@ -9029,7 +9033,19 @@
         "ip_address": "IPv4 വിലാസങ്ങൾ",
         "ipv6_address": "IPv6 വിലാസങ്ങൾ",
         "aws_key": "AWS ആക്‌സസ് കീകൾ",
-        "api_key_generic": "API കീകളും ടോക്കണുകളും"
+        "api_key_generic": "API കീകളും ടോക്കണുകളും",
+        "iban": "IBAN ബാങ്ക് അക്കൗണ്ട് നമ്പറുകൾ",
+        "eu_vat": "EU VAT നമ്പറുകൾ",
+        "es_dni_nie": "സ്പാനിഷ് DNI / NIE",
+        "it_codice_fiscale": "ഇറ്റാലിയൻ കോഡിസ് ഫിസ്കെയിൽ",
+        "pl_pesel": "പോളിഷ് PESEL",
+        "nl_bsn": "ഡച്ച് BSN",
+        "de_steuer_id": "ജർമ്മൻ സ്റ്റ്യൂവർ-ഐഡി",
+        "se_personnummer": "സ്വീഡിഷ് വ്യക്തി",
+        "za_id": "ദക്ഷിണാഫ്രിക്കൻ ID നമ്പറുകൾ",
+        "za_phone": "ദക്ഷിണാഫ്രിക്കൻ ഫോൺ നമ്പറുകൾ",
+        "za_vat": "ദക്ഷിണാഫ്രിക്കൻ VAT നമ്പറുകൾ",
+        "za_tax_ref": "ദക്ഷിണാഫ്രിക്കൻ നികുതി പരാമർശങ്ങൾ"
       },
       "customPatterns": "ഇഷ്ടാനുസൃത പാറ്റേണുകൾ",
       "customPatternsDesc": "പൊരുത്തങ്ങൾ [CUSTOM_REDACTED] ആയി മാറ്റിസ്ഥാപിക്കുന്നു. പരമാവധി {max} പാറ്റേണുകൾ. വിനാശകരമായ ബാക്ക്‌ട്രാക്കിംഗ് സാധ്യതയുള്ള പാറ്റേണുകൾ നിരസിക്കപ്പെടും.",
@@ -12888,7 +12904,8 @@
     "title": "പ്രൊവൈഡർ സ്ഥിതിവിവരക്കണക്കുകൾ",
     "description": "ഓരോ പ്രൊവൈഡറിലെയും ഓരോ മോഡലിലെയും ട്രാഫിക്, ലേറ്റൻസി, വിജയനിരക്കുകൾ",
     "combo": "സംയോജനം",
-    "toggleModels": "{provider}-നുള്ള മോഡലുകൾ കാണിക്കുക"
+    "toggleModels": "{provider}-നുള്ള മോഡലുകൾ കാണിക്കുക",
+    "windowSince": "{date} മുതൽ"
   },
   "relay": {
     "title": "സർവർലെസ് റിലേ പ്രോക്സികൾ",

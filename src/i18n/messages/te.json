@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count} కాంబోలలో ఉపయోగించబడింది: {combos}",
+    "openComboTooltip": "కాంబోలను తెరవండి — {combo} ఉపయోగిస్తోంది"
   },
   "settings": {
     "title": "సెట్టింగ్లు",
@@ -8938,7 +8940,9 @@
         "financial": "ఆర్థిక",
         "brazilian": "బ్రెజిలియన్",
         "usa": "అమెరికా",
-        "full": "పూర్తి"
+        "full": "పూర్తి",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (దక్షిణాఫ్రికా)"
       },
       "builtinTypes": "అంతర్నిర్మిత రకాలు",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4 చిరునామాలు",
         "ipv6_address": "IPv6 చిరునామాలు",
         "aws_key": "AWS యాక్సెస్ కీలు",
-        "api_key_generic": "API కీలు మరియు టోకెన్‌లు"
+        "api_key_generic": "API కీలు మరియు టోకెన్‌లు",
+        "iban": "IBAN బ్యాంక్ ఖాతా నంబర్లు",
+        "eu_vat": "EU VAT సంఖ్యలు",
+        "es_dni_nie": "స్పానిష్ DNI / NIE",
+        "it_codice_fiscale": "ఇటాలియన్ కోడిస్ ఫిస్కేల్",
+        "pl_pesel": "పోలిష్ PESEL",
+        "nl_bsn": "డచ్ BSN",
+        "de_steuer_id": "జర్మన్ స్టీయర్-ID",
+        "se_personnummer": "స్వీడిష్ వ్యక్తి సంఖ్య",
+        "za_id": "దక్షిణాఫ్రికా ID సంఖ్యలు",
+        "za_phone": "దక్షిణాఫ్రికా ఫోన్ నంబర్లు",
+        "za_vat": "దక్షిణాఫ్రికా VAT సంఖ్యలు",
+        "za_tax_ref": "దక్షిణాఫ్రికా పన్ను సూచనలు"
       },
       "customPatterns": "అనుకూల ప్యాటర్న్‌లు",
       "customPatternsDesc": "సరిపోలికలు [CUSTOM_REDACTED] తో భర్తీ చేయబడతాయి. గరిష్ఠంగా {max} ప్యాటర్న్‌లు. విపత్కర బ్యాక్‌ట్రాకింగ్ ప్రమాదం ఉన్న ప్యాటర్న్‌లు తిరస్కరించబడతాయి.",
@@ -12811,7 +12827,8 @@
     "title": "ప్రొవైడర్ గణాంకాలు",
     "description": "ప్రతి ప్రొవైడర్ మరియు ప్రతి మోడల్కు సంబంధించిన ట్రాఫిక్, లేటెన్సీ మరియు విజయ రేట్లు",
     "combo": "కాంబో",
-    "toggleModels": "{provider} కోసం మోడల్లను చూపండి"
+    "toggleModels": "{provider} కోసం మోడల్లను చూపండి",
+    "windowSince": "{date} నుండి"
   },
   "relay": {
     "title": "సర్వర్‌లెస్ రిలే ప్రాక్సీలు",

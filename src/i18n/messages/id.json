@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Batas konkurensi per model",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Opsional: satu model=cap per baris, dicocokkan dengan ID model upstream yang persis sama. Permintaan berlebih diantrekan secara lokal; kosong berarti tanpa batas per model.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Entri konkurensi per model \"{entry}\" tidak valid — gunakan model=cap dengan cap berupa bilangan bulat dari 1 sampai {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Entri konkurensi per model \"{entry}\" tidak valid — gunakan model=cap dengan cap berupa bilangan bulat dari 1 sampai {max}.",
+    "usedInComboTooltip": "Digunakan di {count} kombo: {combos}",
+    "openComboTooltip": "Buka Kombo — digunakan oleh {combo}"
   },
   "settings": {
     "title": "Pengaturan",
@@ -8938,7 +8940,9 @@
         "financial": "Keuangan",
         "brazilian": "Brasil",
         "usa": "AS",
-        "full": "Lengkap"
+        "full": "Lengkap",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (Afrika Selatan)"
       },
       "builtinTypes": "Jenis bawaan",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "Alamat IPv4",
         "ipv6_address": "Alamat IPv6",
         "aws_key": "Kunci akses AWS",
-        "api_key_generic": "Kunci API dan token"
+        "api_key_generic": "Kunci API dan token",
+        "iban": "nomor rekening bank IBAN",
+        "eu_vat": "nomor EU VAT",
+        "es_dni_nie": "DNI Spanyol / NIE",
+        "it_codice_fiscale": "Skala Fiskal Kodeks Italia",
+        "pl_pesel": "PESEL Polandia",
+        "nl_bsn": "BSN belanda",
+        "de_steuer_id": "Steuer-ID Jerman",
+        "se_personnummer": "Nomor orang Swedia",
+        "za_id": "Nomor ID Afrika Selatan",
+        "za_phone": "Nomor telepon Afrika Selatan",
+        "za_vat": "Nomor VAT Afrika Selatan",
+        "za_tax_ref": "Referensi pajak Afrika Selatan"
       },
       "customPatterns": "Pola kustom",
       "customPatternsDesc": "Kecocokan diganti dengan [CUSTOM_REDACTED]. Hingga {max} pola. Pola yang berisiko backtracking katastrofik akan ditolak.",
@@ -12811,7 +12827,8 @@
     "title": "Statistik penyedia",
     "description": "Lalu lintas, latensi, dan tingkat keberhasilan per penyedia dan per model",
     "combo": "Kombinasi",
-    "toggleModels": "Tampilkan model untuk {provider}"
+    "toggleModels": "Tampilkan model untuk {provider}",
+    "windowSince": "Sejak {date}"
   },
   "relay": {
     "title": "Proksi Relai Serverless",

@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "Används i {count} kombination(er): {combos}",
+    "openComboTooltip": "Öppna Kombinationer — används av {combo}"
   },
   "settings": {
     "title": "Inställningar",
@@ -8938,7 +8940,9 @@
         "financial": "Finansiell",
         "brazilian": "Brasiliansk",
         "usa": "USA",
-        "full": "Fullständig"
+        "full": "Fullständig",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (Sydafrika)"
       },
       "builtinTypes": "Inbyggda typer",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4-adresser",
         "ipv6_address": "IPv6-adresser",
         "aws_key": "AWS-åtkomstnycklar",
-        "api_key_generic": "API-nycklar och tokens"
+        "api_key_generic": "API-nycklar och tokens",
+        "iban": "IBAN bankkontonummer",
+        "eu_vat": "EU VAT -nummer",
+        "es_dni_nie": "Spanska DNI / NIE",
+        "it_codice_fiscale": "Italienska Codice Fiscale",
+        "pl_pesel": "polska PESEL",
+        "nl_bsn": "holländska BSN",
+        "de_steuer_id": "tyska Steuer-ID",
+        "se_personnummer": "Svenskt personnummer",
+        "za_id": "Sydafrikanska ID nummer",
+        "za_phone": "Sydafrikanska telefonnummer",
+        "za_vat": "Sydafrikanska VAT nummer",
+        "za_tax_ref": "Sydafrikanska skattereferenser"
       },
       "customPatterns": "Egna mönster",
       "customPatternsDesc": "Träffar ersätts med [CUSTOM_REDACTED]. Upp till {max} mönster. Mönster som riskerar katastrofal backtracking avvisas.",
@@ -12811,7 +12827,8 @@
     "title": "Leverantörsstatistik",
     "description": "Trafik, latens och lyckandefrekvens per leverantör och modell",
     "combo": "Kombination",
-    "toggleModels": "Visa modeller för {provider}"
+    "toggleModels": "Visa modeller för {provider}",
+    "windowSince": "Sedan {date}"
   },
   "relay": {
     "title": "Serverlösa relay-proxies",

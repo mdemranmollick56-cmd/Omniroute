@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "בשימוש ב-{count} שילובים: {combos}",
+    "openComboTooltip": "פתח שילובים — בשימוש על ידי {combo}"
   },
   "settings": {
     "title": "הגדרות",
@@ -8938,7 +8940,9 @@
         "financial": "פיננסי",
         "brazilian": "ברזילאי",
         "usa": "ארה״ב",
-        "full": "מלא"
+        "full": "מלא",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (דרום אפריקה)"
       },
       "builtinTypes": "סוגים מובנים",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "כתובות IPv4",
         "ipv6_address": "כתובות IPv6",
         "aws_key": "מפתחות גישה של AWS",
-        "api_key_generic": "מפתחות API ואסימונים"
+        "api_key_generic": "מפתחות API ואסימונים",
+        "iban": "מספרי חשבון בנק IBAN",
+        "eu_vat": "מספרי EU VAT",
+        "es_dni_nie": "DNI / NIE ספרדית",
+        "it_codice_fiscale": "Codice Fiscale האיטלקי",
+        "pl_pesel": "PESEL פולנית",
+        "nl_bsn": "BSN הולנדי",
+        "de_steuer_id": "גרמנית Steuer-ID",
+        "se_personnummer": "מספר אישי שוודי",
+        "za_id": "מספרי ID דרום אפריקאים",
+        "za_phone": "מספרי טלפון בדרום אפריקה",
+        "za_vat": "מספרי VAT דרום אפריקאים",
+        "za_tax_ref": "אסמכתאות מס בדרום אפריקה"
       },
       "customPatterns": "תבניות מותאמות אישית",
       "customPatternsDesc": "התאמות מוחלפות ב-[CUSTOM_REDACTED]. עד {max} תבניות. תבניות בסיכון לחזרה לאחור קטסטרופלית נדחות.",
@@ -12811,7 +12827,8 @@
     "title": "סטטיסטיקות ספקים",
     "description": "תעבורה, זמני השהיה ושיעורי הצלחה לפי ספק ולפי מודל",
     "combo": "משולב",
-    "toggleModels": "הצגת מודלים עבור {provider}"
+    "toggleModels": "הצגת מודלים עבור {provider}",
+    "windowSince": "מאז {date}"
   },
   "relay": {
     "title": "פרוקסי Relay ללא שרת",

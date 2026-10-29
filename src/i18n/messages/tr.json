@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Model başına eşzamanlılık üst sınırları",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "İsteğe bağlı: her satıra bir model=cap yazın; yukarı akıştaki tam model kimliğiyle eşleştirilir. Fazla istekler yerelde kuyruğa alınır; boş bırakılırsa model başına üst sınır yoktur.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Geçersiz model başına eşzamanlılık girdisi \"{entry}\" — model=cap biçimini kullanın; cap, 1 ile {max} arasında bir tam sayı olmalıdır."
+    "rateLimitOverridesModelConcurrencyInvalid": "Geçersiz model başına eşzamanlılık girdisi \"{entry}\" — model=cap biçimini kullanın; cap, 1 ile {max} arasında bir tam sayı olmalıdır.",
+    "usedInComboTooltip": "{count} kombinasyonda kullanılıyor: {combos}",
+    "openComboTooltip": "Kombinasyonları aç — {combo} tarafından kullanılıyor"
   },
   "settings": {
     "title": "Ayarlar",
@@ -8938,7 +8940,9 @@
         "financial": "Finansal",
         "brazilian": "Brezilya",
         "usa": "ABD",
-        "full": "Tam"
+        "full": "Tam",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (Güney Afrika)"
       },
       "builtinTypes": "Yerleşik türler",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4 adresleri",
         "ipv6_address": "IPv6 adresleri",
         "aws_key": "AWS erişim anahtarları",
-        "api_key_generic": "API anahtarları ve belirteçler"
+        "api_key_generic": "API anahtarları ve belirteçler",
+        "iban": "IBAN banka hesap numaraları",
+        "eu_vat": "EU VAT numaraları",
+        "es_dni_nie": "İspanyolca DNI / NIE",
+        "it_codice_fiscale": "İtalyanca Codice Fiscale",
+        "pl_pesel": "Polonya PESEL",
+        "nl_bsn": "Hollandalı BSN",
+        "de_steuer_id": "Alman Steuer-ID",
+        "se_personnummer": "İsveçli kişi numarası",
+        "za_id": "Güney Afrika ID numaraları",
+        "za_phone": "Güney Afrika telefon numaraları",
+        "za_vat": "Güney Afrika VAT numaraları",
+        "za_tax_ref": "Güney Afrika vergi referansları"
       },
       "customPatterns": "Özel desenler",
       "customPatternsDesc": "Eşleşmeler [CUSTOM_REDACTED] ile değiştirilir. En fazla {max} desen. Felaket düzeyinde geri izleme riski taşıyan desenler reddedilir.",
@@ -12811,7 +12827,8 @@
     "title": "Sağlayıcı istatistikleri",
     "description": "Sağlayıcı ve model bazında trafik, gecikme ve başarı oranları",
     "combo": "Kombinasyon",
-    "toggleModels": "{provider} modellerini göster"
+    "toggleModels": "{provider} modellerini göster",
+    "windowSince": "{date} tarihinden beri"
   },
   "relay": {
     "title": "Serverless Relay Proxy'leri",

@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count}ଟି କମ୍ବୋରେ ବ୍ୟବହୃତ: {combos}",
+    "openComboTooltip": "କମ୍ବୋଗୁଡ଼ିକ ଖୋଲନ୍ତୁ — {combo} ଦ୍ୱାରା ବ୍ୟବହୃତ"
   },
   "settings": {
     "title": "ସେଟିଂସ୍",
@@ -8938,7 +8940,9 @@
         "financial": "ଆର୍ଥିକ",
         "brazilian": "ବ୍ରାଜିଲୀୟ",
         "usa": "ଯୁକ୍ତରାଷ୍ଟ୍ର",
-        "full": "ସମ୍ପୂର୍ଣ୍ଣ"
+        "full": "ସମ୍ପୂର୍ଣ୍ଣ",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (ଦକ୍ଷିଣ ଆଫ୍ରିକା)"
       },
       "builtinTypes": "ଅନ୍ତର୍ନିର୍ମିତ ପ୍ରକାର",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4 ଠିକଣା",
         "ipv6_address": "IPv6 ଠିକଣା",
         "aws_key": "AWS ପ୍ରବେଶ କି",
-        "api_key_generic": "API କି ଏବଂ ଟୋକେନ୍"
+        "api_key_generic": "API କି ଏବଂ ଟୋକେନ୍",
+        "iban": "IBAN ବ୍ୟାଙ୍କ ଆକାଉଣ୍ଟ ନମ୍ବର \\|",
+        "eu_vat": "EU VAT ସଂଖ୍ୟା",
+        "es_dni_nie": "ସ୍ପାନିସ୍ DNI / NIE",
+        "it_codice_fiscale": "ଇଟାଲୀୟ କୋଡିସ୍ ଫିସ୍କାଲ୍ \\|",
+        "pl_pesel": "ପୋଲାଣ୍ଡ PESEL",
+        "nl_bsn": "ଡଚ୍ BSN",
+        "de_steuer_id": "ଜର୍ମାନ ଷ୍ଟିଅର୍- ID \\|",
+        "se_personnummer": "ସ୍ Swedish ିଡିଶ୍ ବ୍ୟକ୍ତିବିଶେଷ \\|",
+        "za_id": "ଦକ୍ଷିଣ ଆଫ୍ରିକୀୟ ID ସଂଖ୍ୟା \\|",
+        "za_phone": "ଦକ୍ଷିଣ ଆଫ୍ରିକାର ଫୋନ୍ ନମ୍ବର \\|",
+        "za_vat": "ଦକ୍ଷିଣ ଆଫ୍ରିକୀୟ VAT ସଂଖ୍ୟା \\|",
+        "za_tax_ref": "ଦକ୍ଷିଣ ଆଫ୍ରିକାର ଟିକସ ସନ୍ଦର୍ଭ \\|"
       },
       "customPatterns": "କଷ୍ଟମ୍ ପ୍ୟାଟର୍ନ",
       "customPatternsDesc": "ମେଳଗୁଡ଼ିକ [CUSTOM_REDACTED] ଦ୍ୱାରା ବଦଳାଯାଏ। ସର୍ବାଧିକ {max}ଟି ପ୍ୟାଟର୍ନ। ବିପର୍ଯ୍ୟୟକାରୀ ବ୍ୟାକଟ୍ରାକିଂ ବିପଦ ଥିବା ପ୍ୟାଟର୍ନ ପ୍ରତ୍ୟାଖ୍ୟାନ କରାଯାଏ।",
@@ -12811,7 +12827,8 @@
     "title": "ପ୍ରଦାତା ପରିସଂଖ୍ୟାନ",
     "description": "ପ୍ରତି ପ୍ରଦାତା ଏବଂ ପ୍ରତି ମଡେଲ୍ର ଟ୍ରାଫିକ୍, ବିଳମ୍ବତା ଏବଂ ସଫଳତା ହାର",
     "combo": "ସଂଯୁକ୍ତ",
-    "toggleModels": "{provider} ପାଇଁ ମଡେଲ୍ଗୁଡ଼ିକ ଦେଖାନ୍ତୁ"
+    "toggleModels": "{provider} ପାଇଁ ମଡେଲ୍ଗୁଡ଼ିକ ଦେଖାନ୍ତୁ",
+    "windowSince": "{date} ଠାରୁ"
   },
   "relay": {
     "title": "ସର୍ଭରଲେସ୍ ରିଲେ ପ୍ରକ୍ସିଗୁଡ଼ିକ",

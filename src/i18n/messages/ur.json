@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count} کومبوز میں استعمال ہوا: {combos}",
+    "openComboTooltip": "کومبوز کھولیں — {combo} کے ذریعے استعمال"
   },
   "settings": {
     "title": "ترتیبات",
@@ -8938,7 +8940,9 @@
         "financial": "مالیاتی",
         "brazilian": "برازیلی",
         "usa": "امریکہ",
-        "full": "مکمل"
+        "full": "مکمل",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (جنوبی افریقہ)"
       },
       "builtinTypes": "بلٹ اِن اقسام",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4 پتے",
         "ipv6_address": "IPv6 پتے",
         "aws_key": "AWS رسائی کیز",
-        "api_key_generic": "API کیز اور ٹوکنز"
+        "api_key_generic": "API کیز اور ٹوکنز",
+        "iban": "IBAN بینک اکاؤنٹ نمبر",
+        "eu_vat": "EU VAT نمبرز",
+        "es_dni_nie": "ہسپانوی DNI / NIE",
+        "it_codice_fiscale": "اطالوی کوڈیس مالیاتی",
+        "pl_pesel": "پولش PESEL",
+        "nl_bsn": "ڈچ BSN",
+        "de_steuer_id": "جرمن Steuer-ID",
+        "se_personnummer": "سویڈش شخصی نمبر",
+        "za_id": "جنوبی افریقی ID نمبر",
+        "za_phone": "جنوبی افریقہ کے فون نمبر",
+        "za_vat": "جنوبی افریقی VAT نمبر",
+        "za_tax_ref": "جنوبی افریقہ کے ٹیکس حوالہ جات"
       },
       "customPatterns": "حسب ضرورت پیٹرن",
       "customPatternsDesc": "مماثلتیں [CUSTOM_REDACTED] سے بدل دی جاتی ہیں۔ زیادہ سے زیادہ {max} پیٹرن۔ تباہ کن بیک ٹریکنگ کے خطرے والے پیٹرن مسترد کیے جاتے ہیں۔",
@@ -12811,7 +12827,8 @@
     "title": "فراہم کنندہ کے اعداد و شمار",
     "description": "فی فراہم کنندہ اور فی ماڈل ٹریفک، تاخیر اور کامیابی کی شرحیں",
     "combo": "کومبو",
-    "toggleModels": "{provider} کے ماڈلز دکھائیں"
+    "toggleModels": "{provider} کے ماڈلز دکھائیں",
+    "windowSince": "{date} سے"
   },
   "relay": {
     "title": "سرور لیس ریلے پراکسیز",

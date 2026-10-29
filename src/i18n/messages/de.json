@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Parallelitätslimits pro Modell",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: ein Modell=Limit pro Zeile, abgeglichen mit der exakten Modell-ID beim Anbieter. Überzählige Anfragen werden lokal in eine Warteschlange gestellt; leer bedeutet kein Limit pro Modell.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Ungültiger Parallelitätseintrag pro Modell „{entry}“ – verwenden Sie Modell=Limit mit einer ganzen Zahl von 1 bis {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Ungültiger Parallelitätseintrag pro Modell „{entry}“ – verwenden Sie Modell=Limit mit einer ganzen Zahl von 1 bis {max}.",
+    "usedInComboTooltip": "Verwendet in {count} Kombination(en): {combos}",
+    "openComboTooltip": "Kombinationen öffnen — verwendet von {combo}"
   },
   "settings": {
     "title": "Einstellungen",
@@ -8938,7 +8940,9 @@
         "financial": "Finanzen",
         "brazilian": "Brasilien",
         "usa": "USA",
-        "full": "Vollständig"
+        "full": "Vollständig",
+        "gdpr": "DSGVO (EU)",
+        "popia": "POPIA (Südafrika)"
       },
       "builtinTypes": "Integrierte Typen",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4-Adressen",
         "ipv6_address": "IPv6-Adressen",
         "aws_key": "AWS-Zugriffsschlüssel",
-        "api_key_generic": "API-Schlüssel und Tokens"
+        "api_key_generic": "API-Schlüssel und Tokens",
+        "iban": "IBAN-Kontonummern",
+        "eu_vat": "EU-USt-IdNr.",
+        "es_dni_nie": "Spanische DNI / NIE",
+        "it_codice_fiscale": "Italienischer Codice Fiscale",
+        "pl_pesel": "Polnische PESEL",
+        "nl_bsn": "Niederländische BSN",
+        "de_steuer_id": "Deutsche Steuer-ID",
+        "se_personnummer": "Schwedische Personnummer",
+        "za_id": "Südafrikanische ID-Nummern",
+        "za_phone": "Südafrikanische Telefonnummern",
+        "za_vat": "Südafrikanische USt-Nummern",
+        "za_tax_ref": "Südafrikanische Steuernummern"
       },
       "customPatterns": "Eigene Muster",
       "customPatternsDesc": "Treffer werden durch [CUSTOM_REDACTED] ersetzt. Bis zu {max} Muster. Muster mit Risiko für katastrophales Backtracking werden abgelehnt.",
@@ -12811,7 +12827,8 @@
     "title": "Anbieterstatistiken",
     "description": "Datenverkehr, Latenz und Erfolgsraten pro Anbieter und Modell",
     "combo": "Kombination",
-    "toggleModels": "Modelle für {provider} anzeigen"
+    "toggleModels": "Modelle für {provider} anzeigen",
+    "windowSince": "Seit {date}"
   },
   "relay": {
     "title": "Serverless-Relay-Proxies",

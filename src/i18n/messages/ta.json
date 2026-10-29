@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count} காம்போக்களில் பயன்படுத்தப்படுகிறது: {combos}",
+    "openComboTooltip": "காம்போக்களைத் திற — {combo} பயன்படுத்துகிறது"
   },
   "settings": {
     "title": "அமைப்புகள்",
@@ -8938,7 +8940,9 @@
         "financial": "நிதி",
         "brazilian": "பிரேசில்",
         "usa": "அமெரிக்கா",
-        "full": "முழுமை"
+        "full": "முழுமை",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (தென் ஆப்பிரிக்கா)"
       },
       "builtinTypes": "உள்ளமைந்த வகைகள்",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4 முகவரிகள்",
         "ipv6_address": "IPv6 முகவரிகள்",
         "aws_key": "AWS அணுகல் விசைகள்",
-        "api_key_generic": "API விசைகள் மற்றும் டோக்கன்கள்"
+        "api_key_generic": "API விசைகள் மற்றும் டோக்கன்கள்",
+        "iban": "IBAN வங்கி கணக்கு எண்கள்",
+        "eu_vat": "EU VAT எண்கள்",
+        "es_dni_nie": "ஸ்பானிஷ் DNI / NIE",
+        "it_codice_fiscale": "இத்தாலிய கோடிஸ் ஃபிஸ்கேல்",
+        "pl_pesel": "போலிஷ் PESEL",
+        "nl_bsn": "டச்சு BSN",
+        "de_steuer_id": "ஜெர்மன் ஸ்டீயர்-ஐடி",
+        "se_personnummer": "ஸ்வீடிஷ் நபர்",
+        "za_id": "தென்னாப்பிரிக்க ID எண்கள்",
+        "za_phone": "தென்னாப்பிரிக்க தொலைபேசி எண்கள்",
+        "za_vat": "தென்னாப்பிரிக்க VAT எண்கள்",
+        "za_tax_ref": "தென்னாப்பிரிக்க வரி குறிப்புகள்"
       },
       "customPatterns": "தனிப்பயன் வடிவங்கள்",
       "customPatternsDesc": "பொருத்தங்கள் [CUSTOM_REDACTED] ஆக மாற்றப்படும். அதிகபட்சம் {max} வடிவங்கள். பேரழிவு பின்னோக்கித் தேடல் அபாயமுள்ள வடிவங்கள் நிராகரிக்கப்படும்.",
@@ -12811,7 +12827,8 @@
     "title": "வழங்குநர் புள்ளிவிவரங்கள்",
     "description": "ஒவ்வொரு வழங்குநர் மற்றும் மாடலுக்குமான போக்குவரத்து, தாமதம் மற்றும் வெற்றி விகிதங்கள்",
     "combo": "சேர்க்கை",
-    "toggleModels": "{provider} மாடல்களைக் காட்டுக"
+    "toggleModels": "{provider} மாடல்களைக் காட்டுக",
+    "windowSince": "{date} முதல்"
   },
   "relay": {
     "title": "சர்வர்லெஸ் ரிலே ப்ராக்ஸிகள்",

@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "{count} kombóban használva: {combos}",
+    "openComboTooltip": "Kombók megnyitása — használja: {combo}"
   },
   "settings": {
     "title": "Beállítások elemre",
@@ -8938,7 +8940,9 @@
         "financial": "Pénzügyi",
         "brazilian": "Brazil",
         "usa": "USA",
-        "full": "Teljes"
+        "full": "Teljes",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (Dél-Afrika)"
       },
       "builtinTypes": "Beépített típusok",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4-címek",
         "ipv6_address": "IPv6-címek",
         "aws_key": "AWS hozzáférési kulcsok",
-        "api_key_generic": "API-kulcsok és tokenek"
+        "api_key_generic": "API-kulcsok és tokenek",
+        "iban": "IBAN bankszámlaszámok",
+        "eu_vat": "EU VAT számok",
+        "es_dni_nie": "spanyol DNI / NIE",
+        "it_codice_fiscale": "Olasz Codice Fiscale",
+        "pl_pesel": "lengyel PESEL",
+        "nl_bsn": "holland BSN",
+        "de_steuer_id": "Német Steuer-ID",
+        "se_personnummer": "svéd személyi szám",
+        "za_id": "Dél-afrikai ID számok",
+        "za_phone": "Dél-afrikai telefonszámok",
+        "za_vat": "Dél-afrikai VAT számok",
+        "za_tax_ref": "Dél-afrikai adóhivatkozások"
       },
       "customPatterns": "Egyéni minták",
       "customPatternsDesc": "A találatokat a rendszer [CUSTOM_REDACTED] értékre cseréli. Legfeljebb {max} minta. A katasztrofális visszalépés kockázatával járó mintákat elutasítja.",
@@ -12811,7 +12827,8 @@
     "title": "Szolgáltatói statisztikák",
     "description": "Szolgáltatónkénti és modellenkénti forgalom, késleltetés és sikerességi arány",
     "combo": "Kombinált",
-    "toggleModels": "A(z) {provider} modelljeinek megjelenítése"
+    "toggleModels": "A(z) {provider} modelljeinek megjelenítése",
+    "windowSince": "{date} óta"
   },
   "relay": {
     "title": "Szerver nélküli közvetítő proxyk",

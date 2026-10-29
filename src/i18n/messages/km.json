@@ -6912,7 +6912,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "បានប្រើក្នុងបន្សំ {count}៖ {combos}",
+    "openComboTooltip": "បើកបន្សំ — ប្រើដោយ {combo}"
   },
   "settings": {
     "title": "ការកំណត់",
@@ -9015,7 +9017,9 @@
         "financial": "ហិរញ្ញវត្ថុ",
         "brazilian": "ប្រេស៊ីល",
         "usa": "សហរដ្ឋអាមេរិក",
-        "full": "ពេញលេញ"
+        "full": "ពេញលេញ",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (អាហ្វ្រិកខាងត្បូង)"
       },
       "builtinTypes": "ប្រភេទដែលមានស្រាប់",
       "types": {
@@ -9029,7 +9033,19 @@
         "ip_address": "អាសយដ្ឋាន IPv4",
         "ipv6_address": "អាសយដ្ឋាន IPv6",
         "aws_key": "កូនសោចូលប្រើ AWS",
-        "api_key_generic": "កូនសោ API និងថូខឹន"
+        "api_key_generic": "កូនសោ API និងថូខឹន",
+        "iban": "លេខគណនីធនាគារ IBAN",
+        "eu_vat": "លេខ EU VAT",
+        "es_dni_nie": "ភាសាអេស្ប៉ាញ DNI / NIE",
+        "it_codice_fiscale": "អ៊ីតាលី Codice Fiscale",
+        "pl_pesel": "ប៉ូឡូញ PESEL",
+        "nl_bsn": "ហូឡង់ BSN",
+        "de_steuer_id": "អាឡឺម៉ង់ Steuer-ID",
+        "se_personnummer": "លេខមនុស្សស៊ុយអែត",
+        "za_id": "លេខ ID អាហ្វ្រិកខាងត្បូង",
+        "za_phone": "លេខទូរស័ព្ទអាហ្វ្រិកខាងត្បូង",
+        "za_vat": "លេខ VAT អាហ្វ្រិកខាងត្បូង",
+        "za_tax_ref": "ឯកសារយោងពន្ធអាហ្រ្វិកខាងត្បូង"
       },
       "customPatterns": "លំនាំផ្ទាល់ខ្លួន",
       "customPatternsDesc": "ការផ្គូផ្គងត្រូវបានជំនួសដោយ [CUSTOM_REDACTED]។ រហូតដល់ {max} លំនាំ។ លំនាំដែលមានហានិភ័យនៃការត្រឡប់ក្រោយមហន្តរាយត្រូវបានបដិសេធ។",
@@ -12888,7 +12904,8 @@
     "title": "ស្ថិតិអ្នកផ្តល់សេវា",
     "description": "ចរាចរណ៍ រយៈពេលឆ្លើយតប និងអត្រាជោគជ័យតាមអ្នកផ្តល់សេវា និងតាមម៉ូដែល",
     "combo": "បន្សំ",
-    "toggleModels": "បង្ហាញម៉ូដែលសម្រាប់ {provider}"
+    "toggleModels": "បង្ហាញម៉ូដែលសម្រាប់ {provider}",
+    "windowSince": "តាំងពី {date}"
   },
   "relay": {
     "title": "ប្រូកស៊ី Relay បែប Serverless",

@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "In úsáid i {count} comhcheangal: {combos}",
+    "openComboTooltip": "Oscail Comhcheangail — in úsáid ag {combo}"
   },
   "settings": {
     "title": "Socruithe",
@@ -8938,7 +8940,9 @@
         "financial": "Airgeadais",
         "brazilian": "Brasaíleach",
         "usa": "SAM",
-        "full": "Iomlán"
+        "full": "Iomlán",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (An Afraic Theas)"
       },
       "builtinTypes": "Cineálacha ionsuite",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "Seoltaí IPv4",
         "ipv6_address": "Seoltaí IPv6",
         "aws_key": "Eochracha rochtana AWS",
-        "api_key_generic": "Eochracha API agus comharthaí"
+        "api_key_generic": "Eochracha API agus comharthaí",
+        "iban": "IBAN uimhreacha cuntais bainc",
+        "eu_vat": "EU VAT uimhreacha",
+        "es_dni_nie": "Spáinnis DNI / NIE",
+        "it_codice_fiscale": "Cód Fiscale na hIodáile",
+        "pl_pesel": "Polainnis PESEL",
+        "nl_bsn": "Ollainnis BSN",
+        "de_steuer_id": "Gearmáinis Steuer-ID",
+        "se_personnummer": "pearsanra Sualainnis",
+        "za_id": "Uimhreacha ID Afraic Theas",
+        "za_phone": "Uimhreacha gutháin na hAfraice Theas",
+        "za_vat": "Uimhreacha VAT Afraic Theas",
+        "za_tax_ref": "Tagairtí cánach na hAfraice Theas"
       },
       "customPatterns": "Patrúin shaincheaptha",
       "customPatternsDesc": "Cuirtear [CUSTOM_REDACTED] in ionad na meaitseálacha. Suas le {max} patrún. Diúltaítear do phatrúin a bhfuil baol cúlrianaithe tubaistigh ag baint leo.",
@@ -12811,7 +12827,8 @@
     "title": "Staitisticí soláthraithe",
     "description": "Trácht, aga folaigh agus rátaí ratha de réir soláthraí agus de réir samhla",
     "combo": "Teaglaim",
-    "toggleModels": "Taispeáin samhlacha do {provider}"
+    "toggleModels": "Taispeáin samhlacha do {provider}",
+    "windowSince": "Ó {date}"
   },
   "relay": {
     "title": "Seachfhreastalaithe Relé Gan Freastalaí",

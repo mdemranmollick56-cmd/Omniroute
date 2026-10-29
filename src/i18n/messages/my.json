@@ -6912,7 +6912,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "ပေါင်းစပ်မှု {count} ခုတွင် အသုံးပြုထားသည်- {combos}",
+    "openComboTooltip": "ပေါင်းစပ်မှုများကို ဖွင့်ရန် — {combo} က အသုံးပြုထားသည်"
   },
   "settings": {
     "title": "ဆက်တင်များ",
@@ -9015,7 +9017,9 @@
         "financial": "ငွေကြေး",
         "brazilian": "ဘရာဇီး",
         "usa": "အမေရိကန်",
-        "full": "အပြည့်အစုံ"
+        "full": "အပြည့်အစုံ",
+        "gdpr": "GDPR (ဥရောပသမဂ္ဂ)",
+        "popia": "POPIA (တောင်အာဖရိက)"
       },
       "builtinTypes": "မူလပါဝင်သော အမျိုးအစားများ",
       "types": {
@@ -9029,7 +9033,19 @@
         "ip_address": "IPv4 လိပ်စာများ",
         "ipv6_address": "IPv6 လိပ်စာများ",
         "aws_key": "AWS ဝင်ရောက်ခွင့် ကီးများ",
-        "api_key_generic": "API ကီးများနှင့် တိုကင်များ"
+        "api_key_generic": "API ကီးများနှင့် တိုကင်များ",
+        "iban": "IBAN ဘဏ်အကောင့်နံပါတ်များ",
+        "eu_vat": "EU VAT နံပါတ်များ",
+        "es_dni_nie": "စပိန် DNI / NIE",
+        "it_codice_fiscale": "အီတလီ Codice Fiscale",
+        "pl_pesel": "ပိုလန် PESEL",
+        "nl_bsn": "ဒတ်ခ်ျ BSN",
+        "de_steuer_id": "ဂျာမန် Steuer-ID",
+        "se_personnummer": "ဆွီဒင် personnummer",
+        "za_id": "တောင်အာဖရိက မှတ်ပုံတင်နံပါတ်များ",
+        "za_phone": "တောင်အာဖရိက ဖုန်းနံပါတ်များ",
+        "za_vat": "တောင်အာဖရိက VAT နံပါတ်များ",
+        "za_tax_ref": "တောင်အာဖရိက အခွန်ကိုးကားနံပါတ်များ"
       },
       "customPatterns": "စိတ်ကြိုက် ပုံစံများ",
       "customPatternsDesc": "ကိုက်ညီမှုများကို [CUSTOM_REDACTED] ဖြင့် အစားထိုးသည်။ ပုံစံ {max} ခုအထိ။ ဆိုးရွားသော backtracking အန္တရာယ်ရှိသော ပုံစံများကို ငြင်းပယ်သည်။",
@@ -12888,7 +12904,8 @@
     "title": "ပံ့ပိုးသူ စာရင်းအင်းများ",
     "description": "ပံ့ပိုးသူတစ်ဦးချင်းနှင့် မော်ဒယ်တစ်ခုချင်းအလိုက် လမ်းကြောင်းပမာဏ၊ တုံ့ပြန်ကြာချိန်နှင့် အောင်မြင်မှုနှုန်းများ",
     "combo": "ပေါင်းစပ်",
-    "toggleModels": "{provider} အတွက် မော်ဒယ်များကို ပြရန်"
+    "toggleModels": "{provider} အတွက် မော်ဒယ်များကို ပြရန်",
+    "windowSince": "{date} မှစ၍"
   },
   "relay": {
     "title": "ဆာဗာမဲ့ Relay ပရောက်စီများ",

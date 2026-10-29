@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "모델별 동시 실행 상한",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "선택 사항: 한 줄에 model=cap 하나를 입력합니다. 업스트림 모델 ID와 정확히 일치해야 합니다. 초과 요청은 로컬에서 대기하며, 비워 두면 모델별 상한이 없습니다.",
-    "rateLimitOverridesModelConcurrencyInvalid": "모델별 동시 실행 항목 \"{entry}\"이(가) 올바르지 않습니다 — model=cap 형식을 사용하고 cap은 1에서 {max} 사이의 정수여야 합니다."
+    "rateLimitOverridesModelConcurrencyInvalid": "모델별 동시 실행 항목 \"{entry}\"이(가) 올바르지 않습니다 — model=cap 형식을 사용하고 cap은 1에서 {max} 사이의 정수여야 합니다.",
+    "usedInComboTooltip": "{count}개 콤보에서 사용 중: {combos}",
+    "openComboTooltip": "콤보 열기 — {combo}에서 사용 중"
   },
   "settings": {
     "title": "설정",
@@ -8938,7 +8940,9 @@
         "financial": "금융",
         "brazilian": "브라질",
         "usa": "미국",
-        "full": "전체"
+        "full": "전체",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (남아프리카공화국)"
       },
       "builtinTypes": "기본 제공 유형",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "IPv4 주소",
         "ipv6_address": "IPv6 주소",
         "aws_key": "AWS 액세스 키",
-        "api_key_generic": "API 키 및 토큰"
+        "api_key_generic": "API 키 및 토큰",
+        "iban": "IBAN 은행 계좌 번호",
+        "eu_vat": "EU VAT 번호",
+        "es_dni_nie": "스페인어 DNI / NIE",
+        "it_codice_fiscale": "이탈리아 코디스 피스케일(Codice Fiscale)",
+        "pl_pesel": "폴란드어 PESEL",
+        "nl_bsn": "네덜란드 BSN",
+        "de_steuer_id": "독일 Steuer-ID",
+        "se_personnummer": "스웨덴 사람번호",
+        "za_id": "남아프리카 ID 번호",
+        "za_phone": "남아프리카 전화번호",
+        "za_vat": "남아프리카 VAT 번호",
+        "za_tax_ref": "남아프리카 공화국 세금 참조"
       },
       "customPatterns": "사용자 지정 패턴",
       "customPatternsDesc": "일치 항목은 [CUSTOM_REDACTED](으)로 바뀝니다. 최대 {max}개 패턴. 치명적인 백트래킹 위험이 있는 패턴은 거부됩니다.",
@@ -12811,7 +12827,8 @@
     "title": "제공업체 통계",
     "description": "제공업체별 및 모델별 트래픽, 지연 시간, 성공률",
     "combo": "조합",
-    "toggleModels": "{provider}의 모델 표시"
+    "toggleModels": "{provider}의 모델 표시",
+    "windowSince": "{date} 이후"
   },
   "relay": {
     "title": "서버리스 릴레이 프록시",

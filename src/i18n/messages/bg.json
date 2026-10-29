@@ -6912,7 +6912,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Per-model concurrency caps",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Optional: one model=cap per line, matched against the exact upstream model id. Queues excess requests locally; blank means no per-model cap.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Invalid per-model concurrency entry \"{entry}\" — use model=cap with a whole number from 1 to {max}.",
+    "usedInComboTooltip": "Използва се в {count} комбо: {combos}",
+    "openComboTooltip": "Отвори Комбота — използва се от {combo}"
   },
   "settings": {
     "title": "Настройки",
@@ -9015,7 +9017,9 @@
         "financial": "Финансов",
         "brazilian": "Бразилски",
         "usa": "САЩ",
-        "full": "Пълен"
+        "full": "Пълен",
+        "gdpr": "GDPR (EU)",
+        "popia": "POPIA (Южна Африка)"
       },
       "builtinTypes": "Вградени типове",
       "types": {
@@ -9029,7 +9033,19 @@
         "ip_address": "IPv4 адреси",
         "ipv6_address": "IPv6 адреси",
         "aws_key": "Ключове за достъп до AWS",
-        "api_key_generic": "API ключове и токени"
+        "api_key_generic": "API ключове и токени",
+        "iban": "IBAN номера на банкови сметки",
+        "eu_vat": "EU VAT числа",
+        "es_dni_nie": "Испански DNI / NIE",
+        "it_codice_fiscale": "италиански Codice Fiscale",
+        "pl_pesel": "полски PESEL",
+        "nl_bsn": "Холандски BSN",
+        "de_steuer_id": "Немски Steuer-ID",
+        "se_personnummer": "Шведски personnummer",
+        "za_id": "Южноафрикански ID номера",
+        "za_phone": "Южноафрикански телефонни номера",
+        "za_vat": "Южноафрикански VAT номера",
+        "za_tax_ref": "Южноафрикански данъчни справки"
       },
       "customPatterns": "Персонализирани шаблони",
       "customPatternsDesc": "Съвпаденията се заменят с [CUSTOM_REDACTED]. До {max} шаблона. Шаблоните с риск от катастрофално връщане се отхвърлят.",
@@ -12888,7 +12904,8 @@
     "title": "Статистика за доставчиците",
     "description": "Трафик, латентност и проценти на успеваемост по доставчик и модел",
     "combo": "Комбинация",
-    "toggleModels": "Показване на моделите за {provider}"
+    "toggleModels": "Показване на моделите за {provider}",
+    "windowSince": "От {date}"
   },
   "relay": {
     "title": "Serverless Relay проксита",

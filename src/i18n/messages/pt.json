@@ -6912,7 +6912,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Limites de concorrência por modelo",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Opcional: um modelo=limite por linha, comparado com o ID exato do modelo no fornecedor. Os pedidos excedentes ficam em fila localmente; em branco significa sem limite por modelo.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Entrada de concorrência por modelo inválida \"{entry}\" — use modelo=limite com um número inteiro de 1 a {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Entrada de concorrência por modelo inválida \"{entry}\" — use modelo=limite com um número inteiro de 1 a {max}.",
+    "usedInComboTooltip": "Utilizado em {count} combinação(ões): {combos}",
+    "openComboTooltip": "Abrir Combinações — utilizado por {combo}"
   },
   "settings": {
     "title": "Configurações",
@@ -9015,7 +9017,9 @@
         "financial": "Financeiro",
         "brazilian": "Brasileiro",
         "usa": "EUA",
-        "full": "Completo"
+        "full": "Completo",
+        "gdpr": "RGPD (UE)",
+        "popia": "POPIA (África do Sul)"
       },
       "builtinTypes": "Tipos incorporados",
       "types": {
@@ -9029,7 +9033,19 @@
         "ip_address": "Endereços IPv4",
         "ipv6_address": "Endereços IPv6",
         "aws_key": "Chaves de acesso AWS",
-        "api_key_generic": "Chaves de API e tokens"
+        "api_key_generic": "Chaves de API e tokens",
+        "iban": "Números de conta bancária IBAN",
+        "eu_vat": "Números de IVA da UE",
+        "es_dni_nie": "DNI / NIE espanhol",
+        "it_codice_fiscale": "Codice Fiscale italiano",
+        "pl_pesel": "PESEL polaco",
+        "nl_bsn": "BSN neerlandês",
+        "de_steuer_id": "Steuer-ID alemão",
+        "se_personnummer": "Personnummer sueco",
+        "za_id": "Números de identidade sul-africanos",
+        "za_phone": "Números de telefone sul-africanos",
+        "za_vat": "Números de IVA sul-africanos",
+        "za_tax_ref": "Referências fiscais sul-africanas"
       },
       "customPatterns": "Padrões personalizados",
       "customPatternsDesc": "As correspondências são substituídas por [CUSTOM_REDACTED]. Até {max} padrões. Padrões com risco de backtracking catastrófico são recusados.",
@@ -12888,7 +12904,8 @@
     "title": "Estatísticas dos fornecedores",
     "description": "Tráfego, latência e taxas de sucesso por fornecedor e por modelo",
     "combo": "Combinação",
-    "toggleModels": "Mostrar modelos de {provider}"
+    "toggleModels": "Mostrar modelos de {provider}",
+    "windowSince": "Desde {date}"
   },
   "relay": {
     "title": "Proxies de relay serverless",

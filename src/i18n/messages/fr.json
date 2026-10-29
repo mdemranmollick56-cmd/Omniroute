@@ -6835,7 +6835,9 @@
     "rateLimitOverridesModelConcurrencyLabel": "Plafonds de concurrence par modèle",
     "rateLimitOverridesModelConcurrencyPlaceholder": "glm-5=1\nglm-4.7=3",
     "rateLimitOverridesModelConcurrencyHint": "Facultatif : un modèle=plafond par ligne, comparé à l’identifiant exact du modèle chez le fournisseur. Les requêtes en excès sont mises en file d’attente localement ; vide signifie aucun plafond par modèle.",
-    "rateLimitOverridesModelConcurrencyInvalid": "Entrée de concurrence par modèle non valide « {entry} » — utilisez modèle=plafond avec un entier de 1 à {max}."
+    "rateLimitOverridesModelConcurrencyInvalid": "Entrée de concurrence par modèle non valide « {entry} » — utilisez modèle=plafond avec un entier de 1 à {max}.",
+    "usedInComboTooltip": "Utilisé dans {count} combinaison(s) : {combos}",
+    "openComboTooltip": "Ouvrir les Combinaisons — utilisé par {combo}"
   },
   "settings": {
     "title": "Paramètres",
@@ -8938,7 +8940,9 @@
         "financial": "Financier",
         "brazilian": "Brésilien",
         "usa": "États-Unis",
-        "full": "Complet"
+        "full": "Complet",
+        "gdpr": "RGPD (UE)",
+        "popia": "POPIA (Afrique du Sud)"
       },
       "builtinTypes": "Types intégrés",
       "types": {
@@ -8952,7 +8956,19 @@
         "ip_address": "Adresses IPv4",
         "ipv6_address": "Adresses IPv6",
         "aws_key": "Clés d’accès AWS",
-        "api_key_generic": "Clés d’API et jetons"
+        "api_key_generic": "Clés d’API et jetons",
+        "iban": "Numéros de compte bancaire IBAN",
+        "eu_vat": "Numéros de TVA de l'UE",
+        "es_dni_nie": "DNI / NIE espagnol",
+        "it_codice_fiscale": "Codice Fiscale italien",
+        "pl_pesel": "PESEL polonais",
+        "nl_bsn": "BSN néerlandais",
+        "de_steuer_id": "Steuer-ID allemand",
+        "se_personnummer": "Personnummer suédois",
+        "za_id": "Numéros d'identité sud-africains",
+        "za_phone": "Numéros de téléphone sud-africains",
+        "za_vat": "Numéros de TVA sud-africains",
+        "za_tax_ref": "Références fiscales sud-africaines"
       },
       "customPatterns": "Motifs personnalisés",
       "customPatternsDesc": "Les correspondances sont remplacées par [CUSTOM_REDACTED]. Jusqu’à {max} motifs. Les motifs qui risquent un backtracking catastrophique sont refusés.",
@@ -12811,7 +12827,8 @@
     "title": "Statistiques des fournisseurs",
     "description": "Trafic, latence et taux de réussite par fournisseur et par modèle",
     "combo": "Combiné",
-    "toggleModels": "Afficher les modèles de {provider}"
+    "toggleModels": "Afficher les modèles de {provider}",
+    "windowSince": "Depuis {date}"
   },
   "relay": {
     "title": "Proxies relais serverless",
