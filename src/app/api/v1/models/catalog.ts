@@ -114,6 +114,7 @@ import {
   getConnectionScopedEffortTiers,
   type ConnectionScopedReasoningCatalog,
   memoizeTargetMetadata,
+  pickSyncedCatalogName,
 } from "./catalogHelpers";
 import {
   qualifyOpenRouterModelId,
@@ -1376,6 +1377,13 @@ async function buildUnifiedModelsResponseCore(
             continue;
           }
 
+          // The provider's published name, unless the registry already names the model.
+          const syncedName = pickSyncedCatalogName(sm, [
+            PROVIDER_MODELS[alias],
+            PROVIDER_MODELS[providerId],
+            PROVIDER_MODELS[canonicalProviderId],
+          ]);
+          const syncedNameField = syncedName ? { name: syncedName } : {};
           if (includeAlias || Boolean(prefix) || selfAliased) {
             models.push({
               id: aliasId,
@@ -1386,6 +1394,7 @@ async function buildUnifiedModelsResponseCore(
               root: sm.id,
               parent: null,
               ...syncedFields,
+              ...syncedNameField,
             });
           }
           if ((includeAlias || Boolean(prefix)) && modelType === "audio") {
@@ -1406,6 +1415,7 @@ async function buildUnifiedModelsResponseCore(
               ...(endpoints.length > 1 || !endpoints.includes("chat")
                 ? { supported_endpoints: endpoints }
                 : {}),
+              ...syncedNameField,
             });
           }
 
@@ -1421,6 +1431,7 @@ async function buildUnifiedModelsResponseCore(
                 root: sm.id,
                 parent: includeAlias ? aliasId : null,
                 ...syncedFields,
+                ...syncedNameField,
               });
             }
           }
