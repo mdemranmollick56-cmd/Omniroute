@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth કન્ફિગર નથી કરવામાં આવ્યું. {applicationsUrl} પર એક OAuth એપ્લિકેશન નોંધણી કરો જેમાં રીડાયરેક્ટ URI {redirectUri} અને સ્કોપ્સ \"{scopes}\" છે, પછી {clientIdEnv} (અને વૈકલ્પિક રીતે {clientSecretEnv}) સેટ કરો અને પુનઃપ્રારંભ કરો.",
     "gitlabDuoSetupDescription": "આ એપ્લિકેશન નોંધણી થયા પછી અને આ OmniRoute ઉદાહરણ પર env vars સેટ થયા પછી, OAuth લોગિન શરૂ કરવા માટે ચાલુ રાખવા માટે ક્લિક કરો.",
     "continue": "ચાલુ રાખો",
+    "copilotPolicyTitle": "પ્રાયોગિક પ્રદાતા: નીતિની સ્થિતિ અસ્પષ્ટ છે",
+    "copilotPolicyLine1": "OmniRoute api.githubcopilot.com દ્વારા જોડાય છે, જે GitHub એ સામાન્ય તૃતીય-પક્ષ અનુમાન API તરીકે પ્રકાશિત કર્યું નથી. આ એકીકરણ પ્રાયોગિક છે અને સૂચના વિના બદલાઈ શકે છે.",
+    "copilotPolicyLine2": "ફક્ત તમારું પોતાનું GitHub એકાઉન્ટ જ કનેક્ટ થઈ શકે છે. ઓળખપત્રો, પૂલ એકાઉન્ટ્સ ક્યારેય શેર કરશો નહીં અથવા તમારી યોજનાની મર્યાદા ઓળંગવાનો પ્રયાસ કરશો નહીં.",
+    "copilotPolicyLine3": "ફ્રી અને સ્ટુડન્ટ પ્લાન યુઝર્સ માત્ર ઓટોમેટિક મોડલ સિલેક્શન મેળવે છે. તમારી Copilot યોજનાની શરતો અને કોઈપણ ઉપયોગ મર્યાદા તમારી જવાબદારી રહે છે.",
+    "copilotPolicyAcknowledge": "હું સમજું છું, કનેક્ટ કરો",
     "tabPasteSetupToken": "સેટઅપ ટોકન",
     "claudeSetupTokenDescription": "ટર્મિનલમાં `claude setup-token` ચલાવો અને તે જે ટોકન છાપે તે પેસ્ટ કરો. તે એક વર્ષ માટે માન્ય છે અને તેમાં કોઈ રિફ્રેશ ટોકન નથી. સાચવતા પહેલાં OmniRoute Anthropic ને એક પરીક્ષણ વિનંતી મોકલે છે.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

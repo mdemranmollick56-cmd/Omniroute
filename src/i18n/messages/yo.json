@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "A kò tíì ṣètò GitLab Duo OAuth. Forúkọsílẹ̀ ohun èlò OAuth ní {applicationsUrl} pẹ̀lú URI ìpadà {redirectUri} àti àwọn scopes \"{scopes}\", lẹ́yìn náà ṣètò {clientIdEnv} (àti {clientSecretEnv} bí o bá fẹ́) kí o sì tún un bẹ̀rẹ̀.",
     "gitlabDuoSetupDescription": "Lẹ́yìn tí a bá ti forúkọsílẹ̀ ohun èlò náà tí a sì ti ṣètò àwọn env vars lórí instance OmniRoute yìí, tẹ Tẹ̀síwájú láti bẹ̀rẹ̀ ìwọlé OAuth.",
     "continue": "Tẹ̀síwájú",
+    "copilotPolicyTitle": "Olupese esiperimenta: ipo eto imulo jẹ aibikita",
+    "copilotPolicyLine1": "OmniRoute sopọ nipasẹ api.githubcopilot.com, eyiti GitHub ko ti ṣe atẹjade bi itọkasi ẹnikẹta gbogbogbo API. Ibarapọ yii jẹ adanwo ati pe o le yipada laisi akiyesi.",
+    "copilotPolicyLine2": "Akọọlẹ GitHub tirẹ nikan ni o le sopọ. Maṣe pin awọn iwe-ẹri, awọn akọọlẹ adagun-odo, tabi gbiyanju lati kọja awọn opin ero rẹ.",
+    "copilotPolicyLine3": "Ọfẹ ati awọn olumulo ero ọmọ ile-iwe gba yiyan awoṣe adaṣe nikan. Awọn ofin ero Copilot rẹ ati awọn opin lilo eyikeyi jẹ ojuṣe rẹ.",
+    "copilotPolicyAcknowledge": "Mo ye, so",
     "tabPasteSetupToken": "Àmì ìṣètò",
     "claudeSetupTokenDescription": "Ṣiṣẹ́ `claude setup-token` nínú tẹ́mínà kí o sì lẹ àmì tí ó tẹ̀ jáde. Ó wúlò fún ọdún kan kò sì ní àmì ìsọdọ̀tun. OmniRoute ń fi ìbéèrè ìdánwò kan ránṣẹ́ sí Anthropic kí ó tó fi pamọ́.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuthが構成されていません。{applicationsUrl}でOAuthアプリケーションを登録し、リダイレクトURI {redirectUri}とスコープ\"{scopes}\"を設定してください。その後、{clientIdEnv}（オプションで{clientSecretEnv}も）を設定し、再起動してください。",
     "gitlabDuoSetupDescription": "アプリケーションが登録され、環境変数がこのOmniRouteインスタンスに設定された後、続行をクリックしてOAuthログインを開始します。",
     "continue": "続ける",
+    "copilotPolicyTitle": "実験的なプロバイダー: ポリシーのステータスがあいまいです",
+    "copilotPolicyLine1": "OmniRoute api.githubcopilot.com 経由で接続しますが、 GitHub一般的なサードパーティ推論APIとして公開していません。この統合は実験的なものであり、予告なく変更される場合があります。",
+    "copilotPolicyLine2": "接続できるのは自分のGitHubアカウントのみです。資格情報を共有したり、アカウントをプールしたり、プランの制限を超えたりしないでください。",
+    "copilotPolicyLine3": "無料および学生プランのユーザーは、自動モデル選択のみを受け取ります。 Copilotプランの規約と使用制限は、お客様の責任となります。",
+    "copilotPolicyAcknowledge": "わかりました、接続します",
     "tabPasteSetupToken": "セットアップトークン",
     "claudeSetupTokenDescription": "ターミナルで `claude setup-token` を実行し、表示されたトークンを貼り付けてください。有効期間は1年で、リフレッシュトークンはありません。OmniRoute は保存前に Anthropic へテストリクエストを1件送信します。",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

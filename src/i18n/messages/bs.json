@@ -11531,6 +11531,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth nije konfigurisan. Registruj OAuth aplikaciju na {applicationsUrl} sa redirect URI {redirectUri} i scope-ovima \"{scopes}\", zatim postavi {clientIdEnv} (i opcionalno {clientSecretEnv}) i ponovo pokreni aplikaciju.",
     "gitlabDuoSetupDescription": "Nakon što je aplikacija registrovana i env varijable postavljene na ovoj OmniRoute instanci, klikni Nastavi kako bi započeo OAuth prijavu.",
     "continue": "Nastavi",
+    "copilotPolicyTitle": "Eksperimentalni dobavljač: status politike je dvosmislen",
+    "copilotPolicyLine1": "OmniRoute se povezuje preko api.githubcopilot.com, koji GitHub nije objavio kao opći zaključak treće strane API. Ova integracija je eksperimentalna i može se promijeniti bez prethodne najave.",
+    "copilotPolicyLine2": "Samo vaš vlastiti GitHub račun može biti povezan. Nikada nemojte dijeliti vjerodajnice, skupne račune niti pokušavajte prekoračiti ograničenja vašeg plana.",
+    "copilotPolicyLine3": "Korisnici besplatnog i studentskog plana dobijaju samo automatski odabir modela. Uslovi vašeg Copilot plana i sva ograničenja upotrebe ostaju vaša odgovornost.",
+    "copilotPolicyAcknowledge": "Razumijem, poveži se",
     "tabPasteSetupToken": "Token za postavljanje",
     "claudeSetupTokenDescription": "Pokrenite `claude setup-token` u terminalu i zalijepite token koji ispiše. Važi godinu dana i nema token za osvježavanje. OmniRoute šalje jedan testni zahtjev Anthropicu prije nego što ga sačuva.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

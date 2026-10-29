@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth ist nicht konfiguriert. Registrieren Sie eine OAuth-Anwendung unter {applicationsUrl} mit der Umleitungs-URI {redirectUri} und den Berechtigungen \"{scopes}\", setzen Sie dann {clientIdEnv} (und optional {clientSecretEnv}) und starten Sie neu.",
     "gitlabDuoSetupDescription": "Nachdem die Anwendung registriert ist und die Umgebungsvariablen für diese OmniRoute-Instanz festgelegt sind, klicken Sie auf Weiter, um den OAuth-Login zu starten.",
     "continue": "Fortfahren",
+    "copilotPolicyTitle": "Experimenteller Anbieter: Der Richtlinienstatus ist nicht eindeutig",
+    "copilotPolicyLine1": "OmniRoute stellt eine Verbindung über api.githubcopilot.com her, was GitHub nicht als allgemeine Drittanbieter-Inferenz API veröffentlicht hat. Diese Integration ist experimentell und kann ohne Vorankündigung geändert werden.",
+    "copilotPolicyLine2": "Es darf nur Ihr eigenes GitHub Konto verbunden werden. Geben Sie niemals Zugangsdaten weiter, bündeln Sie keine Konten und versuchen Sie niemals, die Grenzen Ihres Plans zu überschreiten.",
+    "copilotPolicyLine3": "Nutzer des Free- und Student-Plans erhalten nur eine automatische Modellauswahl. Die Bedingungen Ihres Copilot -Plans und etwaige Nutzungsbeschränkungen liegen in Ihrer Verantwortung.",
+    "copilotPolicyAcknowledge": "Ich verstehe, verbinde dich",
     "tabPasteSetupToken": "Setup-Token",
     "claudeSetupTokenDescription": "Führen Sie `claude setup-token` in einem Terminal aus und fügen Sie das ausgegebene Token ein. Es ist ein Jahr gültig und hat kein Refresh-Token. OmniRoute sendet vor dem Speichern eine Testanfrage an Anthropic.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

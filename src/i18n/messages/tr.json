@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth yapılandırılmamış. {applicationsUrl} adresinde bir OAuth uygulaması kaydedin, yönlendirme URI'sı {redirectUri} ve kapsamlar \"{scopes}\" ile birlikte, ardından {clientIdEnv} (ve isteğe bağlı olarak {clientSecretEnv}) ayarlayın ve yeniden başlatın.",
     "gitlabDuoSetupDescription": "Uygulama kaydedildikten ve bu OmniRoute örneğinde ortam değişkenleri ayarlandıktan sonra, OAuth oturum açma işlemini başlatmak için Devam'a tıklayın.",
     "continue": "Devam Et",
+    "copilotPolicyTitle": "Deneysel sağlayıcı: Politika durumu belirsiz",
+    "copilotPolicyLine1": "OmniRoute, GitHub genel bir üçüncü taraf çıkarımı olarak yayınlamadığı api.githubcopilot.com aracılığıyla bağlanır API. Bu entegrasyon deneyseldir ve önceden bildirilmeksizin değiştirilebilir.",
+    "copilotPolicyLine2": "Yalnızca kendi GitHub hesabınız bağlanabilir. Kimlik bilgilerini, havuz hesaplarını asla paylaşmayın veya plan sınırlarınızı aşmaya çalışmayın.",
+    "copilotPolicyLine3": "Ücretsiz ve Öğrenci planı kullanıcıları yalnızca otomatik model seçimi hakkına sahiptir. Copilot planı koşullarınız ve her türlü kullanım sınırı sizin sorumluluğunuzdadır.",
+    "copilotPolicyAcknowledge": "anladım bağlan",
     "tabPasteSetupToken": "Kurulum belirteci",
     "claudeSetupTokenDescription": "Bir terminalde `claude setup-token` komutunu çalıştırın ve yazdırdığı belirteci yapıştırın. Belirteç bir yıl geçerlidir ve yenileme belirteci yoktur. OmniRoute, kaydetmeden önce Anthropic'e bir test isteği gönderir.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

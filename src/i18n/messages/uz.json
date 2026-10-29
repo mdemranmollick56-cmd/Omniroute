@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth sozlanmagan. {applicationsUrl} manzilida qayta yoʻnaltirish URI manzili sifatida {redirectUri} va ruxsat doiralari sifatida \"{scopes}\" bilan OAuth ilovasini roʻyxatdan oʻtkazing, soʻng {clientIdEnv} (va ixtiyoriy ravishda {clientSecretEnv}) ni sozlab, qayta ishga tushiring.",
     "gitlabDuoSetupDescription": "Ilova roʻyxatdan oʻtkazilib, ushbu OmniRoute instansiyasida muhit oʻzgaruvchilari sozlangach, OAuth orqali kirishni boshlash uchun Davom etish tugmasini bosing.",
     "continue": "Davom etish",
+    "copilotPolicyTitle": "Eksperimental provayder: siyosat holati noaniq",
+    "copilotPolicyLine1": "OmniRoute api.githubcopilot.com orqali ulanadi, bu GitHub umumiy uchinchi tomon xulosasi sifatida e'lon qilinmagan API. Ushbu integratsiya eksperimental hisoblanadi va ogohlantirmasdan o'zgarishi mumkin.",
+    "copilotPolicyLine2": "Faqat shaxsiy GitHub hisobingiz ulanishi mumkin. Hech qachon hisobga olish ma'lumotlarini, pul hisoblarini baham ko'rmang yoki rejangiz chegarasidan oshib ketishga urinmang.",
+    "copilotPolicyLine3": "Bepul va Talaba tarif rejasi foydalanuvchilari faqat avtomatik model tanlashni oladi. Sizning Copilot rejasi shartlari va har qanday foydalanish cheklovlari sizning javobgarligingiz bo'lib qoladi.",
+    "copilotPolicyAcknowledge": "Tushundim, ulaning",
     "tabPasteSetupToken": "Sozlash tokeni",
     "claudeSetupTokenDescription": "Terminalda `claude setup-token` buyrug'ini ishga tushiring va u chiqargan tokenni joylashtiring. U bir yil amal qiladi va yangilash tokeniga ega emas. OmniRoute saqlashdan oldin Anthropic'ga bitta sinov so'rovini yuboradi.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

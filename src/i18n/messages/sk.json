@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth nie je nakonfigurovaný. Zaregistrujte OAuth aplikáciu na {applicationsUrl} s URI na presmerovanie {redirectUri} a rozsahmi \"{scopes}\", potom nastavte {clientIdEnv} (a voliteľne {clientSecretEnv}) a reštartujte.",
     "gitlabDuoSetupDescription": "Po registrácii aplikácie a nastavení env premenných na tejto inštancii OmniRoute kliknite na Pokračovať, aby ste začali prihlásenie pomocou OAuth.",
     "continue": "Pokračovať",
+    "copilotPolicyTitle": "Experimentálny poskytovateľ: stav pravidiel je nejednoznačný",
+    "copilotPolicyLine1": "OmniRoute sa pripája cez api.githubcopilot.com, ktorý GitHub nezverejnil ako všeobecnú inferenciu tretej strany API. Táto integrácia je experimentálna a môže sa zmeniť bez upozornenia.",
+    "copilotPolicyLine2": "Môže byť pripojený iba váš vlastný účet GitHub. Nikdy nezdieľajte poverenia, spoločné účty ani sa nepokúšajte prekročiť limity vášho plánu.",
+    "copilotPolicyLine3": "Používatelia bezplatných a študentských programov dostanú iba automatický výber modelu. Podmienky vášho plánu Copilot a akékoľvek obmedzenia používania zostávajú vašou zodpovednosťou.",
+    "copilotPolicyAcknowledge": "Rozumiem, spojte sa",
     "tabPasteSetupToken": "Token z nastavenia",
     "claudeSetupTokenDescription": "Spustite v termináli `claude setup-token` a vložte token, ktorý vypíše. Platí jeden rok a nemá obnovovací token. OmniRoute pred uložením odošle do Anthropic jednu testovaciu požiadavku.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

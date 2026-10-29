@@ -11531,6 +11531,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth 尚未配置。在 {applicationsUrl} 注册一个 OAuth 应用，使用重定向 URI {redirectUri} 和范围 \"{scopes}\"，然后设置 {clientIdEnv}（可选地设置 {clientSecretEnv}）并重启。",
     "gitlabDuoSetupDescription": "在应用程序注册并在此 OmniRoute 实例上设置环境变量后，单击继续以开始 OAuth 登录。",
     "continue": "继续",
+    "copilotPolicyTitle": "实验提供商：政策状态不明确",
+    "copilotPolicyLine1": "OmniRoute通过 api.githubcopilot.com 连接， GitHub尚未将其发布为通用第三方推理API。此集成是实验性的，可能会发生更改，恕不另行通知。",
+    "copilotPolicyLine2": "只能连接您自己的GitHub帐户。切勿共享凭据、池帐户或尝试超出您的计划限制。",
+    "copilotPolicyLine3": "免费和学生计划用户只能收到自动模型选择。您的Copilot计划条款和任何使用限制仍由您负责。",
+    "copilotPolicyAcknowledge": "我明白了，连接",
     "tabPasteSetupToken": "设置令牌",
     "claudeSetupTokenDescription": "在终端中运行 `claude setup-token`，然后粘贴它输出的令牌。该令牌有效期为一年，没有刷新令牌。OmniRoute 会在保存前向 Anthropic 发送一次测试请求。",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

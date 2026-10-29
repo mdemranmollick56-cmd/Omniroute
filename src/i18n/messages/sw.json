@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth haijasanidiwa. Jisajili programu ya OAuth kwenye {applicationsUrl} na URI ya kurejea {redirectUri} na mipango \"{scopes}\", kisha weka {clientIdEnv} (na hiari {clientSecretEnv}) na uanzishe upya.",
     "gitlabDuoSetupDescription": "Baada ya programu kuandikishwa na vigezo vya mazingira kuwekwa kwenye mfano huu wa OmniRoute, bonyeza Endelea kuanza kuingia kwa OAuth.",
     "continue": "Endelea",
+    "copilotPolicyTitle": "Mtoa huduma wa majaribio: hali ya sera haina utata",
+    "copilotPolicyLine1": "OmniRoute inaunganisha kupitia api.githubcopilot.com, ambayo GitHub haijachapisha kama makisio ya jumla ya mtu wa tatu API. Ujumuishaji huu ni wa majaribio na unaweza kubadilika bila taarifa.",
+    "copilotPolicyLine2": "Ni akaunti yako GitHub pekee ndiyo inaweza kuunganishwa. Kamwe usishiriki kitambulisho, akaunti pamoja, au kujaribu kuvuka mipaka ya mpango wako.",
+    "copilotPolicyLine3": "Watumiaji wa mpango bila malipo na Wanafunzi hupokea uteuzi wa kiotomatiki wa muundo pekee. Masharti yako ya mpango wa Copilot na vikomo vya matumizi vinasalia kuwa jukumu lako.",
+    "copilotPolicyAcknowledge": "Ninaelewa, unganisha",
     "tabPasteSetupToken": "Tokeni ya usanidi",
     "claudeSetupTokenDescription": "Endesha `claude setup-token` kwenye terminal na ubandike tokeni inayochapisha. Ni halali kwa mwaka mmoja na haina tokeni ya kuonyesha upya. OmniRoute hutuma ombi moja la majaribio kwa Anthropic kabla ya kuihifadhi.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

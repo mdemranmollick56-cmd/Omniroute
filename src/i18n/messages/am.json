@@ -11531,6 +11531,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth አልተዋቀረም። በ{applicationsUrl} ላይ OAuth መተግበሪያን፣ የመመለሻ URI {redirectUri} እና \"{scopes}\" ወሰኖችን በመጠቀም ይመዝግቡ፤ ከዚያ {clientIdEnv}ን (እና ከፈለጉ {clientSecretEnv}ን) ያዘጋጁና እንደገና ያስጀምሩ።",
     "gitlabDuoSetupDescription": "መተግበሪያው ከተመዘገበ እና የአካባቢ ተለዋዋጮቹ በዚህ የOmniRoute ኢንስታንስ ላይ ከተዋቀሩ በኋላ፣ የOAuth መግቢያውን ለመጀመር «ቀጥል»ን ጠቅ ያድርጉ።",
     "continue": "ቀጥል",
+    "copilotPolicyTitle": "የሙከራ አቅራቢ፡ የፖሊሲው ሁኔታ አሻሚ ነው።",
+    "copilotPolicyLine1": "OmniRoute በ api.githubcopilot.com በኩል ይገናኛል፣ ይህም GitHub እንደ አጠቃላይ የሶስተኛ ወገን መረጃ API ያልታተመ ነው። ይህ ውህደት የሙከራ ነው እና ያለማሳወቂያ ሊለወጥ ይችላል።",
+    "copilotPolicyLine2": "የእራስዎ GitHub መለያ ብቻ ሊገናኝ ይችላል። ምስክርነቶችን፣ የመዋኛ ሒሳቦችን በጭራሽ አያጋሩ ወይም ከእቅድዎ ገደብ ለማለፍ አይሞክሩ።",
+    "copilotPolicyLine3": "ነፃ እና የተማሪ እቅድ ተጠቃሚዎች አውቶማቲክ ሞዴል ምርጫ ብቻ ይቀበላሉ። የእርስዎ Copilot ዕቅድ ውሎች እና ማንኛውም የአጠቃቀም ገደቦች የእርስዎ ኃላፊነት እንደሆኑ ይቆያሉ።",
+    "copilotPolicyAcknowledge": "ተረድቻለሁ፣ ተገናኝ",
     "tabPasteSetupToken": "የማዋቀሪያ ቶከን",
     "claudeSetupTokenDescription": "በተርሚናል ውስጥ `claude setup-token` ያሂዱ እና የሚያሳየውን ቶከን ይለጥፉ። ለአንድ ዓመት ያገለግላል እና የማደሻ ቶከን የለውም። OmniRoute ከማስቀመጡ በፊት አንድ የሙከራ ጥያቄ ወደ Anthropic ይልካል።",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."

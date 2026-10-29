@@ -11454,6 +11454,11 @@
     "gitlabDuoSetupMessage": "GitLab Duo OAuth nesukonfigūruotas. Užregistruokite OAuth programą adresu {applicationsUrl}, nurodydami peradresavimo URI {redirectUri} ir aprėptis „{scopes}“, tada nustatykite {clientIdEnv} (ir pasirinktinai {clientSecretEnv}) bei paleiskite iš naujo.",
     "gitlabDuoSetupDescription": "Kai programa bus užregistruota ir šiame OmniRoute egzemplioriuje bus nustatyti aplinkos kintamieji, spustelėkite „Tęsti“, kad pradėtumėte OAuth prisijungimą.",
     "continue": "Tęsti",
+    "copilotPolicyTitle": "Eksperimentinis teikėjas: politikos būsena yra dviprasmiška",
+    "copilotPolicyLine1": "OmniRoute prisijungia per api.githubcopilot.com, kurio GitHub nepaskelbė kaip bendros trečiosios šalies išvados API. Ši integracija yra eksperimentinė ir gali keistis be įspėjimo.",
+    "copilotPolicyLine2": "Gali būti prijungta tik jūsų GitHub paskyra. Niekada nesidalykite kredencialais, nebendrinkite paskyrų ir nebandykite viršyti plano limitų.",
+    "copilotPolicyLine3": "Nemokamo ir Studento plano naudotojai gauna tik automatinį modelio pasirinkimą. Už Copilot plano sąlygas ir bet kokius naudojimo apribojimus atsakote jūs.",
+    "copilotPolicyAcknowledge": "Supratau, prisijunk",
     "tabPasteSetupToken": "Sąrankos žetonas",
     "claudeSetupTokenDescription": "Terminale paleiskite `claude setup-token` ir įklijuokite jo išspausdintą žetoną. Jis galioja vienerius metus ir neturi atnaujinimo žetono. Prieš išsaugodamas OmniRoute išsiunčia vieną bandomąją užklausą į Anthropic.",
     "claudeSetupTokenPlaceholder": "sk-ant-oat01-..."
