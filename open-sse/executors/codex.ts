@@ -76,7 +76,10 @@ import {
   isCodexCompactionWebReplay,
 } from "./codex/compactionReplay.ts";
 import { CODEX_ULTRA_ALIAS_MODELS, splitCodexReasoningSuffix } from "./codex/reasoningSuffix.ts";
-import { applyCodexReasoningSelection } from "./codex/reasoningPolicy.ts";
+import {
+  applyCodexReasoningSelection,
+  normalizeCodexSummaryStreamOptions,
+} from "./codex/reasoningPolicy.ts";
 import { repairMissingCodexToolCallOutputs } from "./codex/toolCallRepair.ts";
 import { recoverCodexReasoningReplayRejection } from "./codex/reasoningReplayRejection.ts";
 import { resolveAppServerConfig } from "./codex/appServerConfig.ts";
@@ -1351,6 +1354,7 @@ export class CodexExecutor extends BaseExecutor {
       delete body.include;
     } else {
       body.stream = true;
+      normalizeCodexSummaryStreamOptions(body);
     }
     delete body._nativeCodexPassthrough;
 
@@ -1584,6 +1588,7 @@ export class CodexExecutor extends BaseExecutor {
       "tools",
       "tool_choice",
       "stream",
+      "stream_options",
       "store",
       "reasoning",
       "service_tier",
