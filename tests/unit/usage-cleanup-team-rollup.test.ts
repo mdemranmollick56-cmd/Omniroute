@@ -68,3 +68,34 @@ test("cleanup folds Team rows into daily_team_usage_summary before deleting raw 
     3
   );
 });
+
+test("cleanup keeps a Team row with a non-UTC offset until it is folded", async () => {
+  // DATE() reads this as 2020-02-02 (21:00 UTC), but as a string it sorts after
+  // 2020-02-03, so the fold for 2020-02-02 alone does not reach it.
+  const timestamp = "2020-02-03T02:00:00+05:00";
+  const team = teams.createTeam({ name: "Offset" });
+  const key = await keys.createApiKey("offset", "cleanup-team-offset");
+  teams.assignApiKeyBillingTeam(key.id, team.id, "2019-01-01T00:00:00.000Z");
+  await usage.saveRequestUsage({
+    provider: "openai",
+    model: "m",
+    apiKeyId: key.id,
+    success: true,
+    tokens: { input: 7, output: 1 },
+    timestamp,
+  });
+  const db = core.getDbInstance();
+  assert.equal((await cleanup.cleanupUsageHistory()).errors, 0);
+  const folded = db
+    .prepare(
+      "SELECT COALESCE(SUM(total_requests), 0) n FROM daily_team_usage_summary WHERE team_id = ?"
+    )
+    .get(team.id) as { n: number };
+  const left = db
+    .prepare(
+      "SELECT COUNT(*) n FROM usage_history WHERE timestamp = ? AND team_rollup_processed_at IS NULL"
+    )
+    .get(timestamp) as { n: number };
+  // Every Team row is either folded into the summary or still on disk.
+  assert.equal(folded.n + left.n, 1);
+});
