@@ -4,7 +4,7 @@
  * @module lib/db/cleanup
  */
 
-import { publishDay } from "@/lib/usage/aggregateHistory";
+import { publishDay, rollupTeamUsageBefore } from "@/lib/usage/aggregateHistory";
 import { purgeCallLogArtifactDirectory } from "@/lib/usage/callLogArtifacts";
 
 import { getDbInstance } from "./core";
@@ -131,6 +131,9 @@ export async function cleanupUsageHistory(): Promise<CleanupResult> {
     try {
       published = await publishDay(day, {
         onCommit: (tx) => {
+          // Team summaries are built from the raw rows, so fold this day's
+          // unprocessed Team rows in before they are deleted, in the same commit.
+          rollupTeamUsageBefore(tx, nextUtcDay(day));
           removed = tx
             .prepare("DELETE FROM usage_history WHERE DATE(timestamp) = ?")
             .run(day).changes;
@@ -174,6 +177,11 @@ function readRetiringDay(db: ReturnType<typeof getDbInstance>, day: string): Ret
     .prepare("SELECT COUNT(*) AS n FROM usage_daily_summary WHERE date = ?")
     .get(day) as { n: number };
   return { revision: dirty?.revision ?? null, rawCount: raw.n, summaryCount: summary.n };
+}
+
+function nextUtcDay(day: string): string {
+  const [year, month, date] = day.split("-").map(Number);
+  return new Date(Date.UTC(year, month - 1, date + 1)).toISOString().slice(0, 10);
 }
 
 function notePublishedDay(db: ReturnType<typeof getDbInstance>, day: string): void {
@@ -858,6 +866,7 @@ const RESET_USAGE_HISTORY_PERIOD_MS: Record<TimedResetUsageHistoryPeriod, number
 export interface ResetUsageHistoryResult extends CleanupResult {
   deletedUsageHistory: number;
   deletedDailySummary: number;
+  deletedDailyTeamSummary: number;
   deletedHourlySummary: number;
   deletedCallLogs: number;
   deletedCallLogArtifacts: number;
@@ -912,6 +921,12 @@ const RESET_TARGETS: Array<
     column: "date",
     cutoff: "date",
     resultKey: "deletedDailySummary",
+  },
+  {
+    table: "daily_team_usage_summary",
+    column: "date",
+    cutoff: "date",
+    resultKey: "deletedDailyTeamSummary",
   },
   {
     table: "hourly_usage_summary",
@@ -990,6 +1005,7 @@ export async function resetUsageHistory(period: string): Promise<ResetUsageHisto
     deleted: 0,
     deletedUsageHistory: 0,
     deletedDailySummary: 0,
+    deletedDailyTeamSummary: 0,
     deletedHourlySummary: 0,
     deletedCallLogs: 0,
     deletedCallLogArtifacts: 0,
